@@ -5,31 +5,50 @@
     <title>HTML Academy: Глейси</title>
 </head>
 <body>
-<heder class="main-header">
+<header class="main-header">
     <div class="logo-index">
-        <img src="img/logo.svg" alt="Глейси">
+        <a><img src="img/logo.svg" alt="Глейси"></a>
     </div>
     <nav class="main-navigation">
         <ul>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Каталог</a>
+                <ul class="main-navigation-catalog">
+                    <li>
+                        <a href="#" class="new-items">Новинки</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Сливочное</a>
+                    </li>
+                    <li>
+                        <a href="#">Щербеты</a>
+                    </li>
+                    <li>
+                        <a href="#">Фруктовый лёд</a>
+                    </li>
+                    <li>
+                        <a href="#">Мелорин</a>
+                    </li>
+                </ul>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
         </ul>
     </nav>
-    <div class="search-button">
-        <!--  Search button      -->
+    <div class="btn-search">
+        <button class="btn-search">Поиск</button>
     </div>
-    <ul class="user-navigation">
-        <li class="login-link"></li>
-    </ul>
-    <div class="shopping-basket">
-        <!--  shopping basket      -->
+    <div class="btn-user-navigation">
+        <button class="btn-user-navigation">Вход</button>
     </div>
-</heder>
+    <div class="btn-shopping-basket">
+        <button class="btn-shopping-basket">Пусто</button>
+    </div>
+</header>
 
 <main class="main-index">
+    <h1 class="header-hide">Глэйси — магазин по продаже мороженого собственного производства</h1>
     <section class="features">
-        <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+        <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="features">
             <li class="production">Все наше мороженое изготавливается на собственном производстве, с использованием
                 современного оборудования и проверенных временем технологий.
@@ -51,6 +70,7 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
     <section class="subscription">
+        <h2 class="header-hide">Подпишитесь на нашу рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <!--  subscription form      -->
@@ -59,14 +79,16 @@
 
 <footer class="main-footer">
     <section class="footer-social">
+        <h2 class="header-hide">Мы в социальных сетях</h2>
         <ul class="social-buttons">
-            <li class="btn-twitter"><a href="https://twitter.com/">twitter</a></li>
-            <li class="btn-instagram"><a href="https://www.instagram.com/#">instagram</a></li>
-            <li class="btn-facebook"><a href="https://www.facebook.com/#">facebook</a></li>
-            <li class="btn-vk"><a href="https://vk.com/#">В контакте</a></li>
+            <li class="btn-twitter"><a href="https://twitter.com/#" target="_blank">twitter</a></li>
+            <li class="btn-instagram"><a href="https://www.instagram.com/#" target="_blank">instagram</a></li>
+            <li class="btn-facebook"><a href="https://www.facebook.com/#" target="_blank">facebook</a></li>
+            <li class="btn-vk"><a href="https://vk.com/#" target="_blank">В контакте</a></li>
         </ul>
     </section>
     <section class="footer-info">
+        <h2 class="header-hide">Информация и документы</h2>
         <ul class="footer-info">
             <li><a href="#">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
@@ -75,11 +97,14 @@
         </ul>
     </section>
     <section class="footer-copyrigh">
-        <img src="img/html-academy.svg" alt="HTML Academy">
-        <p>Сделано в <a class="footer-href" href="#">HTML Academy ©</a> 2019</p>
+        <h2 class="header-hide">Копирайт академии</h2>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/html-academy.svg"
+                                                                                alt="HTML Academy"></a>
+        <p>Сделано в <a class="footer-href" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy
+            ©</a> 2019</p>
     </section>
 </footer>
-<!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
+
 
 </body>
 </html>
