@@ -36,20 +36,19 @@
         </ul>
     </nav>
     <div class="btn-search">
-        <label for="search-field">
-            <button class="btn-search">Поиск</button>
-        </label>
+        <button class="btn-search">Поиск</button>
         <form action="#" name="search-form" method="get">
+            <label for="search-field" class="visually-hiden">Введите запрос для поиска</label>
             <input type="text" name="search-input" id="search-field" autofocus placeholder="Что ищем?">
         </form>
     </div>
     <div class="btn-user-navigation">
-        <label for="email-field">
-            <button class="btn-user-navigation">Вход</button>
-        </label>
+        <button class="btn-user-navigation">Вход</button>
         <div class="logon-div">
             <form action="#" name="logon-form" method="post">
+                <label for="email-field" class="visually-hiden">Введите логин для входа</label>
                 <input type="email" name="email-input" id="email-field" autofocus placeholder="Электронная почта">
+                <label for="password-field" class="visually-hiden">Введите пароль для входа</label>
                 <input type="password" name="password-input" id="password-field" placeholder="Пароль">
                 <input type="submit" name="submit-logon-form" id="submit-logon" value="Войти">
             </form>
@@ -95,6 +94,7 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="#" name="subscription-form" method="post">
+            <label for="subscription-email-field" class="visually-hiden">Введите почту для подписки</label>
             <input type="email" name="subscription-email" id="subscription-email-field" placeholder="Электронная почта">
             <input type="submit" name="submit-subscription" id="submit-subscription-field" value="Отправить">
         </form>
@@ -103,9 +103,14 @@
         <h2 class="visually-hiden">Задайте свой вопрос</h2>
         <p>Мы обязательно Вам ответим!</p>
         <form action="#" name="feedback-form" method="post">
+            <label for="feedback-name-field" class="visually-hiden">Введите Ваше имя</label>
             <input type="text" name="feedback-name" id="feedback-name-field" autofocus placeholder="Как Вас зовут?">
+            <label for="feedback-email-field" class="visually-hiden">Введите почту для обратной связи</label>
             <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
-            <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="7" placeholder="Напишите что-нибудь..."></textarea>  <!--placeholder почему-то не срабатывает если тег закрыть на другой строке. видимо интер принимает за содержимое-->
+            <label for="feedback-question-field" class="visually-hiden">Введите вопрос</label>
+            <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="7"
+                      placeholder="Напишите что-нибудь..."></textarea>
+            <!--placeholder почему-то не срабатывает если тег закрыть на другой строке. видимо интер принимает за содержимое-->
             <input type="submit" name="submit-feedback-form" id="submit-feedback" value="Отправить">
         </form>
     </section>
