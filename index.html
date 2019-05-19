@@ -36,18 +36,38 @@
         </ul>
     </nav>
     <div class="btn-search">
-        <button class="btn-search">Поиск</button>
+        <label for="search-field">
+            <button class="btn-search">Поиск</button>
+        </label>
+        <form action="#" name="search-form" method="get">
+            <input type="text" name="search-input" id="search-field" autofocus placeholder="Что ищем?">
+        </form>
     </div>
     <div class="btn-user-navigation">
-        <button class="btn-user-navigation">Вход</button>
+        <label for="email-field">
+            <button class="btn-user-navigation">Вход</button>
+        </label>
+        <div class="logon-div">
+            <form action="#" name="logon-form" method="post">
+                <input type="email" name="email-input" id="email-field" autofocus placeholder="Электронная почта">
+                <input type="password" name="password-input" id="password-field" placeholder="Пароль">
+                <input type="submit" name="submit-logon-form" id="submit-logon" value="Войти">
+            </form>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+        </div>
     </div>
     <div class="btn-shopping-basket">
         <button class="btn-shopping-basket">Пусто</button>
     </div>
+    <div class="contacts">
+        <p class="time">С 10 до 20, ежедневно</p>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
+    </div>
 </header>
 
 <main class="main-index">
-    <h1 class="header-hide">Глэйси — магазин по продаже мороженого собственного производства</h1>
+    <h1 class="visually-hiden">Глэйси — магазин по продаже мороженого собственного производства</h1>
     <section class="features">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="features">
@@ -71,16 +91,29 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
     <section class="subscription">
-        <h2 class="header-hide">Подпишитесь на нашу рассылку</h2>
+        <h2 class="visually-hiden">Подпишитесь на нашу рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--  subscription form      -->
+        <form action="#" name="subscription-form" method="post">
+            <input type="email" name="subscription-email" id="subscription-email-field" placeholder="Электронная почта">
+            <input type="submit" name="submit-subscription" id="submit-subscription-field" value="Отправить">
+        </form>
+    </section>
+    <section class="feedback visually-hiden">
+        <h2 class="visually-hiden">Задайте свой вопрос</h2>
+        <p>Мы обязательно Вам ответим!</p>
+        <form action="#" name="feedback-form" method="post">
+            <input type="text" name="feedback-name" id="feedback-name-field" autofocus placeholder="Как Вас зовут?">
+            <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+            <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="7" placeholder="Напишите что-нибудь..."></textarea>  <!--placeholder почему-то не срабатывает если тег закрыть на другой строке. видимо интер принимает за содержимое-->
+            <input type="submit" name="submit-feedback-form" id="submit-feedback" value="Отправить">
+        </form>
     </section>
 </main>
 
 <footer class="main-footer">
     <section class="footer-social">
-        <h2 class="header-hide">Мы в социальных сетях</h2>
+        <h2 class="visually-hiden">Мы в социальных сетях</h2>
         <ul class="social-buttons">
             <li class="btn-twitter"><a href="https://twitter.com/#" target="_blank">twitter</a></li>
             <li class="btn-instagram"><a href="https://www.instagram.com/#" target="_blank">instagram</a></li>
@@ -89,7 +122,7 @@
         </ul>
     </section>
     <section class="footer-info">
-        <h2 class="header-hide">Информация и документы</h2>
+        <h2 class="visually-hiden">Информация и документы</h2>
         <ul class="footer-info">
             <li><a href="#">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
@@ -98,7 +131,7 @@
         </ul>
     </section>
     <section class="footer-copyrigh">
-        <h2 class="header-hide">Копирайт академии</h2>
+        <h2 class="visually-hiden">Копирайт академии</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/html-academy.svg"
                                                                                 alt="HTML Academy"></a>
         <p>Сделано в <a class="footer-href" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy
