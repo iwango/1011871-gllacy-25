@@ -37,12 +37,27 @@
     </nav>
     <div class="btn-search">
         <button class="btn-search">Поиск</button>
+        <form action="#" name="search-form" method="get">
+            <label for="search-field" class="visually-hiden">Введите запрос для поиска</label>
+            <input type="text" name="search-input" id="search-field" autofocus placeholder="Что ищем?">
+        </form>
     </div>
     <div class="btn-user-navigation">
         <button class="btn-user-navigation">Вход</button>
+        <div class="logon-div">
+            <form action="#" name="logon-form" method="post">
+                <label for="email-field" class="visually-hiden">Введите логин для входа</label>
+                <input type="email" name="email-input" id="email-field" autofocus placeholder="Электронная почта">
+                <label for="password-field" class="visually-hiden">Введите пароль для входа</label>
+                <input type="password" name="password-input" id="password-field" placeholder="Пароль">
+                <input type="submit" name="submit-logon-form" id="submit-logon" value="Войти">
+            </form>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+        </div>
     </div>
     <div class="btn-shopping-basket">
-        <button class="btn-shopping-basket">Пусто</button>
+        <button class="btn-shopping-basket">2 товара</button>
     </div>
     <div class="contacts">
         <p class="time">С 10 до 20, ежедневно</p>
@@ -200,7 +215,63 @@
         </ul>
 
     </section>
-
+    <section class="feedback visually-hiden">
+        <h2 class="visually-hiden">Задайте свой вопрос</h2>
+        <p>Мы обязательно Вам ответим!</p>
+        <form action="#" name="feedback-form" method="post">
+            <label for="feedback-name-field" class="visually-hiden">Введите Ваше имя</label>
+            <input type="text" name="feedback-name" id="feedback-name-field" autofocus placeholder="Как Вас зовут?">
+            <label for="feedback-email-field" class="visually-hiden">Введите почту для обратной связи</label>
+            <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+            <label for="feedback-question-field" class="visually-hiden">Введите вопрос</label>
+            <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="7"
+                      placeholder="Напишите что-нибудь..."></textarea>
+            <input type="submit" name="submit-feedback-form" id="submit-feedback" value="Отправить">
+        </form>
+    </section>
+    <section class="checkout-section">
+        <table>
+            <tr class="visually-hiden">
+                <th>Убрать из корзины</th>
+                <th>Миниатюра</th>
+                <th>Название</th>
+                <th>Вес</th>
+                <th>Цена за килограмм</th>
+                <th>Цена</th>
+            </tr>
+            <tr>
+                <td class="cancel-btn">
+                    <button class="cancel-btn"><img src="/img/cancel.svg" alt="Убрать из корзины"></button>
+                </td>
+                <td class="midget-img"><a href="#"><img src="/img/basket-img-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a></td>
+                <td class="article-icecream">Пломбир с апельсиновым джемом</td>
+                <td class="weight">1,5</td>
+                <td class="weight-measure">кг х</td>
+                <td class="unit-price">200</td>
+                <td class="currency">рублей</td>
+                <td class="price">300</td>
+                <td class="currency">рублей</td>
+            </tr>
+            <tr>
+                <td class="cancel-btn">
+                    <button class="cancel-btn"><img src="/img/cancel.svg" alt="Убрать из корзины"></button>
+                </td>
+                <td class="midget-img"><a href="#"><img src="img/basket-img-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></a>
+                </td>
+                <td class="article-icecream">Клубничный пломбир с присыпкой
+                    из белого шоколада
+                </td>
+                <td class="weight">1,5</td>
+                <td class="weight-measure">кг х</td>
+                <td class="unit-price">300</td>
+                <td class="currency">рублей</td>
+                <td class="price">450</td>
+                <td class="currency">рублей</td>
+            </tr>
+        </table>
+        <p class="total-price">Итого: 750 руб.</p>
+        <button class="checkout-btn">Оформить заказ</button>
+    </section>
 </main>
 
 <footer class="main-footer">
