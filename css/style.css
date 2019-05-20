@@ -1,3 +1,17 @@
 .visually-hiden{
 
 }
+
+.weight:after {
+    content: " кг х";
+}
+
+.basket-price::after {
+    content: " Руб.";
+}
+span.kg::before {
+    content: " ₽";
+}
+span.kg::after {
+    content: "/кг";
+}
