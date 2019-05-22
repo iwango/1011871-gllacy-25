@@ -1,9 +1,19 @@
-.visibility-hidden{
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #849d8f;
+}
+
+.visibility-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+
+/*временно спрятаны всплывающие окна*/
+.btn-search form, .logon-div, .feedback form, .checkout-section {
+    display: none;
 }
 
 .weight:after {
@@ -13,6 +23,152 @@
 .basket-price::after {
     content: " Руб.";
 }
+
 span.kg::before {
     content: " ₽";
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.main-navigation a {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.main-navigation-catalog a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #323232;
+}
+
+.main-navigation-catalog li:first-child a {
+    font-weight: bold;
+}
+
+.btn-user-navigation, .btn-shopping-basket {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.btn-shopping-basket .filled {
+    color: #323232;
+}
+
+.contacts {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contacts a {
+    font-size: 22px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.features h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.features li {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #323232;
+}
+
+.news-blog h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.news-blog a {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.subscription p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #5a5a5a;
+}
+
+.subscription input {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #999999;
+}
+
+.subscription button {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.footer-info a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footer-info li:first-child a {
+    font-weight: bold;
+}
+
+.footer-copyrigh, .footer-copyrigh a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #fefefe;
+}
+
+.breadcrumbs a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.header-catalog {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.price .kg {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+a.product {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #ffffff;
 }
