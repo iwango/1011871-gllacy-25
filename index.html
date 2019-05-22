@@ -37,20 +37,20 @@
     </nav>
     <div class="btn-search">
         <button class="btn-search">Поиск</button>
-        <form action="#" name="search-form" method="get">
-            <label for="search-field" class="visually-hiden">Введите запрос для поиска</label>
+        <form action="https://echo.htmlacademy.ru/" name="search-form" method="get">
+            <label for="search-field" class="visibility-hidden">Введите запрос для поиска</label>
             <input type="text" name="search-input" id="search-field" autofocus placeholder="Что ищем?">
         </form>
     </div>
     <div class="btn-user-navigation">
         <button class="btn-user-navigation">Вход</button>
         <div class="logon-div">
-            <form action="#" name="logon-form" method="post">
-                <label for="email-field" class="visually-hiden">Введите логин для входа</label>
+            <form action="https://echo.htmlacademy.ru/" name="logon-form" method="post">
+                <label for="email-field" class="visibility-hidden">Введите логин для входа</label>
                 <input type="email" name="email-input" id="email-field" placeholder="Электронная почта">
-                <label for="password-field" class="visually-hiden">Введите пароль для входа</label>
+                <label for="password-field" class="visibility-hidden">Введите пароль для входа</label>
                 <input type="password" name="password-input" id="password-field" placeholder="Пароль">
-                <input type="submit" name="submit-logon-form" id="submit-logon" value="Войти">
+                <button type="submit" name="submit-logon-form" id="submit-logon">Войти</button>
             </form>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -66,7 +66,7 @@
 </header>
 
 <main class="main-index">
-    <h1 class="visually-hiden">Глэйси — магазин по продаже мороженого собственного производства</h1>
+    <h1 class="visibility-hidden">Глэйси — магазин по продаже мороженого собственного производства</h1>
     <section class="features">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="features">
@@ -90,35 +90,34 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
     <section class="subscription">
-        <h2 class="visually-hiden">Подпишитесь на нашу рассылку</h2>
+        <h2 class="visibility-hidden">Подпишитесь на нашу рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="#" name="subscription-form" method="post">
-            <label for="subscription-email-field" class="visually-hiden">Введите почту для подписки</label>
+        <form action="https://echo.htmlacademy.ru/" name="subscription-form" method="post">
+            <label for="subscription-email-field" class="visibility-hidden">Введите почту для подписки</label>
             <input type="email" name="subscription-email" id="subscription-email-field" placeholder="Электронная почта">
-            <input type="submit" name="submit-subscription" id="submit-subscription-field" value="Отправить">
+            <button type="submit" name="submit-subscription" id="submit-subscription-field">Отправить</button>>
         </form>
     </section>
-    <section class="feedback visually-hiden">
-        <h2 class="visually-hiden">Задайте свой вопрос</h2>
+    <section class="feedback visibility-hidden">
+        <h2 class="visibility-hidden">Задайте свой вопрос</h2>
         <p>Мы обязательно Вам ответим!</p>
-        <form action="#" name="feedback-form" method="post">
-            <label for="feedback-name-field" class="visually-hiden">Введите Ваше имя</label>
+        <form action="https://echo.htmlacademy.ru/" name="feedback-form" method="post">
+            <label for="feedback-name-field" class="visibility-hidden">Введите Ваше имя</label>
             <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как Вас зовут?">
-            <label for="feedback-email-field" class="visually-hiden">Введите почту для обратной связи</label>
+            <label for="feedback-email-field" class="visibility-hidden">Введите почту для обратной связи</label>
             <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
-            <label for="feedback-question-field" class="visually-hiden">Введите вопрос</label>
+            <label for="feedback-question-field" class="visibility-hidden">Введите вопрос</label>
             <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="7"
                       placeholder="Напишите что-нибудь..."></textarea>
-            <!--placeholder почему-то не срабатывает если тег закрыть на другой строке. видимо интер принимает за содержимое-->
-            <input type="submit" name="submit-feedback-form" id="submit-feedback" value="Отправить">
+            <button type="submit" name="submit-feedback-form" id="submit-feedback">Отправить</button>
         </form>
     </section>
 </main>
 
 <footer class="main-footer">
     <section class="footer-social">
-        <h2 class="visually-hiden">Мы в социальных сетях</h2>
+        <h2 class="visibility-hidden">Мы в социальных сетях</h2>
         <ul class="social-buttons">
             <li class="btn-twitter"><a href="https://twitter.com/#" target="_blank">twitter</a></li>
             <li class="btn-instagram"><a href="https://www.instagram.com/#" target="_blank">instagram</a></li>
@@ -127,7 +126,7 @@
         </ul>
     </section>
     <section class="footer-info">
-        <h2 class="visually-hiden">Информация и документы</h2>
+        <h2 class="visibility-hidden">Информация и документы</h2>
         <ul class="footer-info">
             <li><a href="#">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
@@ -136,11 +135,10 @@
         </ul>
     </section>
     <section class="footer-copyrigh">
-        <h2 class="visually-hiden">Копирайт академии</h2>
+        <h2 class="visibility-hidden">Копирайт академии</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/html-academy.svg"
                                                                                 alt="HTML Academy"></a>
-        <p>Сделано в <a class="footer-href" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy
-            ©</a> 2019</p>
+        <p>Сделано в <a class="footer-href" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy ©</a> 2019</p>
     </section>
 </footer>
 
