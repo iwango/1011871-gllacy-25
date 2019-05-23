@@ -42,6 +42,9 @@ a {
     color: #ffffff;
 }
 
+.logon-div a {
+    color: #323232;}
+
 a:hover, a:active {
     color: #ffbc9e
 }
@@ -185,8 +188,8 @@ a:hover, a:active {
     font-size: 14px;
     line-height: 16px;
     font-weight: normal;
-    color: #ffffff;
 }
+.breadcrumbs li:last-of-type a {color: #ffffff;}
 
 .header-catalog {
     font-size: 35px;
@@ -291,6 +294,7 @@ article.news-blog {
 }
 
 section.subscription {
+    position: relative;
     background-image: url("../img/mail-background.png");
     width: 560px;
     height: 220px;
@@ -298,6 +302,12 @@ section.subscription {
 }
 
 div.mail-content {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: #f8f7f4;
     width: 549px;
     height: 211px;
@@ -314,5 +324,83 @@ div.mail-content {
     width: 32px;
     height: 32px;
     border: rgba(255, 255, 255, 0.5) solid 3px;
+    border-radius: 50%;
+}
+
+.btn-search form {
+    position: relative;
+    width: 341px;
+    height: 84px;
+    border-radius: 6px;
+    background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.btn-search input {
+    position: absolute;
+    width: 315px;
+    height: 48px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: #d3d3d2 solid 1px;
+    border-radius: 5px;
+    position: absolute;
+}
+.btn-search input::placeholder {
+    padding-left: 15px;
+}
+
+/*------------------------*/
+.logon-div form {
+    position: relative;
+    width: 277px;
+    height: 214px;
+    border-radius: 6px;
+    background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    padding-top: 20px;
+}
+.logon-div input {
+    width: 245px;
+    height: 48px;
+    border: #d3d3d2 solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 19px;
+
+}
+.logon-div input::placeholder {
+    padding-left: 15px;
+}
+
+.logon-div button {
+    width: 100px;
+    height: 44px;
+    /*узнать как точно высчитать радиус*/
+    border-radius: 50px;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    margin-left: 19px;
+    margin-right: 20px;
+    background: linear-gradient(to bottom, rgb(231,74,53), rgb(242,104,67));
+    color: #ffffff;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+/*наложение прозрачного градиента на не прозрачный не получилось не получилось доделать и переделать кнопки */
+.logon-div button:hover {
+    background: linear-gradient (to top, rgba (255,255,255,0.2), rgba (255,255,255,0.2)),
+                linear-gradient(to bottom, rgb(231,74,53), rgb(242,104,67));
+}
+.logon-div button:active {
+    background: linear-gradient(to bottom, rgb(242,104,67), rgb(231,74,53)),
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}
+
+.logon-div form a {text-align: right;} /*доделать*/
+
+.assortment img {
+    width: 267px;
+    height: 267px;
     border-radius: 50%;
 }
