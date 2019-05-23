@@ -38,7 +38,7 @@
         </ul>
     </nav>
     <div class="btn-search">
-        <button class="btn-search">Поиск</button>
+        <button class="btn-search"><span class="visibility-hidden">Поиск</span></button>
         <form action="https://echo.htmlacademy.ru/" name="search-form" method="get">
             <label for="search-field" class="visibility-hidden">Введите запрос для поиска</label>
             <input type="text" name="search-input" id="search-field" autofocus placeholder="Что ищем?">
@@ -93,13 +93,15 @@
     </article>
     <section class="subscription">
         <h2 class="visibility-hidden">Подпишитесь на нашу рассылку</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="https://echo.htmlacademy.ru/" name="subscription-form" method="post">
-            <label for="subscription-email-field" class="visibility-hidden">Введите почту для подписки</label>
-            <input type="email" name="subscription-email" id="subscription-email-field" placeholder="Электронная почта">
-            <button type="submit" name="submit-subscription" id="submit-subscription-field">Отправить</button>
-        </form>
+        <div class="mail-content">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form action="https://echo.htmlacademy.ru/" name="subscription-form" method="post">
+                <label for="subscription-email-field" class="visibility-hidden">Введите почту для подписки</label>
+                <input type="email" name="subscription-email" id="subscription-email-field" placeholder="Электронная почта">
+                <button type="submit" name="submit-subscription" id="submit-subscription-field">Отправить</button>
+            </form>
+        </div>
     </section>
     <section class="feedback">
         <h2 class="visibility-hidden">Задайте свой вопрос</h2>
@@ -121,10 +123,10 @@
     <section class="footer-social">
         <h2 class="visibility-hidden">Мы в социальных сетях</h2>
         <ul class="social-buttons">
-            <li class="btn-twitter"><a href="https://twitter.com/#" target="_blank">twitter</a></li>
-            <li class="btn-instagram"><a href="https://www.instagram.com/#" target="_blank">instagram</a></li>
-            <li class="btn-facebook"><a href="https://www.facebook.com/#" target="_blank">facebook</a></li>
-            <li class="btn-vk"><a href="https://vk.com/#" target="_blank">В контакте</a></li>
+            <li class="btn-twitter"><a href="https://twitter.com/#" target="_blank"><img src="img/twitter-icon.svg" alt="twitter"></a></li>
+            <li class="btn-instagram"><a href="https://www.instagram.com/#" target="_blank"><img src="img/instagram.svg" alt="instagram"></a></li>
+            <li class="btn-facebook"><a href="https://www.facebook.com/#" target="_blank"><img src="img/facebook-icon.svg" alt="facebook"></a></li>
+            <li class="btn-vk"><a href="https://vk.com/#" target="_blank"><img src="img/vk-icon.svg" alt="В контакте"></a></li>
         </ul>
     </section>
     <section class="footer-info">

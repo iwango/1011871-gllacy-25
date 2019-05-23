@@ -11,12 +11,16 @@ body {
     margin: -1px;
 }
 
+button {
+    border: none;
+}
+
 /*временно спрятаны всплывающие окна*/
 .btn-search form, .logon-div, .feedback form, .checkout-section {
     display: none;
 }
 
-.weight:after {
+.weight::after {
     content: " кг х";
 }
 
@@ -30,8 +34,20 @@ span.kg::before {
     font-weight: bold;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover, a:active {
+    color: #ffbc9e
+}
+
+
 .main-navigation a {
-    font-family: Roboto;
     font-size: 16px;
     line-height: 18px;
     font-weight: bold;
@@ -43,10 +59,24 @@ span.kg::before {
     line-height: 16px;
     font-weight: normal;
     color: #323232;
+    background-color: #f8f7f4;
+    text-decoration: none;
 }
 
 .main-navigation-catalog li:first-child a {
     font-weight: bold;
+}
+
+.main-navigation-catalog a:hover {
+    background-color: #fbded7;
+}
+
+.main-navigation-catalog a:active {
+    background-color: #f6b5a5;
+}
+
+.main-navigation-catalog .menu-activ {
+    background-color: #d07058;
 }
 
 .btn-user-navigation, .btn-shopping-basket {
@@ -133,6 +163,17 @@ span.kg::before {
     font-weight: bold;
 }
 
+.footer-info li {
+    position: relative;
+}
+
+.footer-info li:first-child::before {
+    content: url("../img/heart-icon.svg");
+    position: absolute;
+    left: -22px;
+    top: 2px;
+}
+
 .footer-copyrigh, .footer-copyrigh a {
     font-size: 12px;
     line-height: 18px;
@@ -171,4 +212,107 @@ a.product {
     line-height: 22px;
     font-weight: 500;
     color: #ffffff;
+}
+
+button.btn-search {
+    background-image: url("../img/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto auto;
+    width: 33px;
+    height: 33px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+button:hover.btn-search {
+    background-color: #f8f7f4;
+    background-image: url("../img/search-icon-hover.png");
+
+}
+
+button.btn-user-navigation {
+    background-image: url("../img/login-icon.png");
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    background-size: auto auto;
+    width: 93px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    text-align: right;
+    padding-right: 16px;
+}
+
+button.btn-user-navigation:hover {
+    background-image: url("../img/login-icon-hover.png");
+    background-color: #f8f7f4;
+    color: #323232;
+}
+
+button.btn-shopping-basket {
+    background-image: url("../img/empty-basket-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    background-size: auto auto;
+    width: 100px;
+    height: 33px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    text-align: right;
+    padding-right: 17px;
+}
+
+button.btn-shopping-basket.filled {
+    background-image: url("../img/filled-basket-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    background-size: auto auto;
+    width: 117px;
+    height: 32px;
+    background-color: rgba(248, 247, 244, 0.99);
+    border-radius: 16px;
+    text-align: right;
+    padding-right: 17px;
+}
+
+section.features {
+    background-image: url("../img/background-features.jpg");
+    width: 1146px;
+    height: 306px;
+    border-radius: 16px;
+}
+
+article.news-blog {
+    background-image: url("../img/background-strawberry.jpg");
+    width: 560px;
+    height: 220px;
+    border-radius: 16px;
+}
+
+section.subscription {
+    background-image: url("../img/mail-background.png");
+    width: 560px;
+    height: 220px;
+    border-radius: 16px;
+}
+
+div.mail-content {
+    background-color: #f8f7f4;
+    width: 549px;
+    height: 211px;
+    border-radius: 16px;
+}
+
+.social-buttons image {
+    width: 32px;
+    height: 32px;
+    border: black solid 30px;
+}
+
+.social-buttons li {
+    width: 32px;
+    height: 32px;
+    border: rgba(255, 255, 255, 0.5) solid 3px;
+    border-radius: 50%;
 }
