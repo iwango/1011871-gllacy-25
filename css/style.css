@@ -3,15 +3,19 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
-  background-color: #849d8f;
   width: 1250px;
+
+  background-color: #849d8f;
+
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 /*Невидимые заголовки*/
 .visibility-hidden {
   position: absolute;
+
   clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -33,6 +37,7 @@ body {
 
 span.kg::before {
   content: " ₽";
+
   font-size: 45px;
   font-weight: bold;
 }
@@ -57,19 +62,22 @@ span.kg::before {
 
 /*главное меню*/
 .main-navigation a {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
   color: #ffffff;
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
 }
 
 .main-navigation-catalog a {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: normal;
+  text-decoration: none;
+
   color: #323232;
   background-color: #f8f7f4;
-  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
 }
 
 a.a-bold {
@@ -89,23 +97,26 @@ a.a-bold {
 }
 
 .upper-level > a {
-  border-radius: 16px;
   padding-right: 15px;
   padding-left: 15px;
+
+  border-radius: 16px;
 }
 
 .upper-level > a:hover {
-  background-color: rgb(247, 246, 243);
-  color: #323232;
   text-decoration: none;
+
+  color: #323232;
+  background-color: rgb(247, 246, 243);
 }
 
 /*навигация и корзина*/
 .btn-user-navigation, .btn-shopping-basket {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
   color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 .btn-shopping-basket .filled {
@@ -118,10 +129,11 @@ a.a-bold {
 
 /*режим и контакт*/
 .contacts {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: bold;
   color: #ffffff;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
 }
 
 .contacts a {
@@ -131,113 +143,126 @@ a.a-bold {
 
 /*особенности*/
 section.features {
-  background-image: url("../img/background-features.jpg");
-  /*width: 1146px;*/
+  /* width: 1146px; */
   border-radius: 16px;
+  background-image: url("../img/background-features.jpg");
 }
 
 .features h2 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 500;
   color: #323232;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 .features li {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: normal;
   color: #323232;
+
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
 }
 
 /*новости в блоге*/
 article.news-blog {
-  background-image: url("../img/background-strawberry.jpg");
-  /*width: 560px;*/
+  /* width: 560px; */
   border-radius: 16px;
+  background-image: url("../img/background-strawberry.jpg");
 }
 
 .news-blog h2 {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
   color: #323232;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .news-blog a {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
   color: #323232;
+
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 /*подписка-----------------
 ---------переделать рамку размеры прописаны временно*/
 section.subscription {
   position: relative;
-  background-image: url("../img/mail-background.png");
+
   width: 560px;
   height: 220px;
+
   border-radius: 16px;
+  background-image: url("../img/mail-background.png");
 }
 
 div.mail-content {
   position: absolute;
-  margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #f8f7f4;
+
   width: 549px;
   height: 211px;
+  margin: auto;
+
   border-radius: 16px;
+  background-color: #f8f7f4;
 }
 
 /*----------------*/
 .subscription p {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: normal;
   color: #5a5a5a;
+
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
 }
 
 .subscription input {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
   color: #999999;
+
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
 }
 
 .subscription button {
-  border: none;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
   color: #fefefe;
+  border: none;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
 }
 
 /*футер инфо*/
 .footer-info a {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: normal;
   color: #ffffff;
+
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
 }
 
 /*футер копирайт*/
 .footer-copyrigh, .footer-copyrigh a {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: normal;
   color: #fefefe;
+
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
 }
 
 /*крошки*/
 .breadcrumbs a {
   font-size: 14px;
-  line-height: 16px;
   font-weight: normal;
+  line-height: 16px;
 }
 
 .breadcrumbs li:last-of-type a {
@@ -246,17 +271,19 @@ div.mail-content {
 
 /*каталог*/
 .header-catalog {
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: bold;
   color: #ffffff;
+
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
 }
 
 .price {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: bold;
   color: #ffffff;
+
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
 }
 
 .price .kg {
@@ -265,29 +292,32 @@ div.mail-content {
 }
 
 a.product {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
   color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 /*обрезание картинки в каталоге*/
 .assortment img {
   width: 267px;
   height: 267px;
+
   border-radius: 50%;
 }
 
 /*кнопки поиск, навигация, корзина*/
 button.btn-search {
+  width: 33px;
+  height: 33px;
+
   border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: auto auto;
-  width: 33px;
-  height: 33px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
 }
 
 button:hover.btn-search {
@@ -297,46 +327,52 @@ button:hover.btn-search {
 }
 
 button.btn-user-navigation {
+  width: 93px;
+  height: 32px;
+  padding-right: 16px;
+
+  text-align: right;
+
   border: none;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
   background-repeat: no-repeat;
   background-position: 16px 50%;
   background-size: auto auto;
-  width: 93px;
-  height: 32px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  text-align: right;
-  padding-right: 16px;
 }
 
 button.btn-user-navigation:hover {
+  color: #323232;
   border: none;
   background-color: #f8f7f4;
-  color: #323232;
 }
 
 button.btn-shopping-basket {
+  width: 100px;
+  height: 33px;
+  padding-right: 17px;
+
+  text-align: right;
+
   border: none;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
   background-repeat: no-repeat;
   background-position: 16px 50%;
   background-size: auto auto;
-  width: 100px;
-  height: 33px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  text-align: right;
-  padding-right: 17px;
 }
 
 button.btn-shopping-basket.filled {
+  width: 117px;
+  height: 32px;
+  padding-right: 17px;
+
+  text-align: right;
+
   border: none;
+  border-radius: 16px;
+  background-color: rgba(248, 247, 244, 0.99);
   background-repeat: no-repeat;
   background-position: 16px 50%;
   background-size: auto auto;
-  width: 117px;
-  height: 32px;
-  background-color: rgba(248, 247, 244, 0.99);
-  border-radius: 16px;
-  text-align: right;
-  padding-right: 17px;
 }
