@@ -1,406 +1,342 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #849d8f;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #849d8f;
+  width: 1250px;
 }
 
+/*Невидимые заголовки*/
 .visibility-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
-button {
-    border: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /*временно спрятаны всплывающие окна*/
 .btn-search form, .logon-div, .feedback form, .checkout-section {
-    display: none;
+  display: none;
 }
 
+/*Псевдоэлементы*/
 .weight::after {
-    content: " кг х";
+  content: " кг х";
 }
 
 .basket-price::after {
-    content: " Руб.";
+  content: " Руб.";
 }
 
 span.kg::before {
-    content: " ₽";
-    font-size: 45px;
-    font-weight: bold;
+  content: " ₽";
+  font-size: 45px;
+  font-weight: bold;
 }
 
-ul {
-    list-style-type: none;
+/*цвет ссылок хедер, футер, крошки*/
+.main-footer a, .main-header a, .breadcrumbs a {
+  color: #ffffff;
 }
 
-a {
-    color: #ffffff;
+.main-footer a:hover, .main-header a:hover, .breadcrumbs a:hover {
+  color: #ffbc9e;
 }
 
-.logon-div a {
-    color: #323232;}
-
-a:hover, a:active {
-    color: #ffbc9e
+.main-footer a:active, .main-header a:active, .breadcrumbs a:active {
+  color: #ffbc9e;
 }
 
+/*метки списков*/
+.list-none ul {
+  list-style-type: none;
+}
 
+/*главное меню*/
 .main-navigation a {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: bold;
-    color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .main-navigation-catalog a {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: normal;
-    color: #323232;
-    background-color: #f8f7f4;
-    text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
+  background-color: #f8f7f4;
+  text-decoration: none;
 }
 
-.main-navigation-catalog li:first-child a {
-    font-weight: bold;
+a.a-bold {
+  font-weight: bold;
 }
 
 .main-navigation-catalog a:hover {
-    background-color: #fbded7;
+  background-color: #fbded7;
 }
 
 .main-navigation-catalog a:active {
-    background-color: #f6b5a5;
+  background-color: #f6b5a5;
 }
 
 .main-navigation-catalog .menu-activ {
-    background-color: #d07058;
+  background-color: #d07058;
 }
 
+.upper-level > a {
+  border-radius: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.upper-level > a:hover {
+  background-color: rgb(247, 246, 243);
+  color: #323232;
+  text-decoration: none;
+}
+
+/*навигация и корзина*/
 .btn-user-navigation, .btn-shopping-basket {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;
-    color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .btn-shopping-basket .filled {
-    color: #323232;
+  color: #323232;
 }
 
+.logon-div a {
+  color: #323232;
+}
+
+/*режим и контакт*/
 .contacts {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
-    color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .contacts a {
-    font-size: 22px;
-    line-height: 24px;
-    color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/*особенности*/
+section.features {
+  background-image: url("../img/background-features.jpg");
+  /*width: 1146px;*/
+  border-radius: 16px;
 }
 
 .features h2 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 500;
-    color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
 }
 
 .features li {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: normal;
-    color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #323232;
+}
+
+/*новости в блоге*/
+article.news-blog {
+  background-image: url("../img/background-strawberry.jpg");
+  /*width: 560px;*/
+  border-radius: 16px;
 }
 
 .news-blog h2 {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
 }
 
 .news-blog a {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-    color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
 }
 
+/*подписка-----------------
+---------переделать рамку размеры прописаны временно*/
+section.subscription {
+  position: relative;
+  background-image: url("../img/mail-background.png");
+  width: 560px;
+  height: 220px;
+  border-radius: 16px;
+}
+
+div.mail-content {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f7f4;
+  width: 549px;
+  height: 211px;
+  border-radius: 16px;
+}
+
+/*----------------*/
 .subscription p {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: normal;
-    color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #5a5a5a;
 }
 
 .subscription input {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #999999;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #999999;
 }
 
 .subscription button {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #fefefe;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fefefe;
 }
 
+/*футер инфо*/
 .footer-info a {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: normal;
-    color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
 }
 
-.footer-info li:first-child a {
-    font-weight: bold;
-}
-
-.footer-info li {
-    position: relative;
-}
-
-.footer-info li:first-child::before {
-    content: url("../img/heart-icon.svg");
-    position: absolute;
-    left: -22px;
-    top: 2px;
-}
-
+/*футер копирайт*/
 .footer-copyrigh, .footer-copyrigh a {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: normal;
-    color: #fefefe;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #fefefe;
 }
 
+/*крошки*/
 .breadcrumbs a {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
 }
-.breadcrumbs li:last-of-type a {color: #ffffff;}
 
+.breadcrumbs li:last-of-type a {
+  color: #ffffff;
+}
+
+/*каталог*/
 .header-catalog {
-    font-size: 35px;
-    line-height: 41px;
-    font-weight: bold;
-    color: #ffffff;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .price {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: bold;
-    color: #ffffff;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .price .kg {
-    font-size: 30px;
-    font-weight: normal;
+  font-size: 30px;
+  font-weight: normal;
 }
 
 a.product {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
+/*обрезание картинки в каталоге*/
+.assortment img {
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+}
+
+/*кнопки поиск, навигация, корзина*/
 button.btn-search {
-    background-image: url("../img/search-icon.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: auto auto;
-    width: 33px;
-    height: 33px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto auto;
+  width: 33px;
+  height: 33px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
 }
 
 button:hover.btn-search {
-    background-color: #f8f7f4;
-    background-image: url("../img/search-icon-hover.png");
+  border: none;
+  background-color: #f8f7f4;
 
 }
 
 button.btn-user-navigation {
-    background-image: url("../img/login-icon.png");
-    background-repeat: no-repeat;
-    background-position: 16px 50%;
-    background-size: auto auto;
-    width: 93px;
-    height: 32px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    text-align: right;
-    padding-right: 16px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+  background-size: auto auto;
+  width: 93px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  text-align: right;
+  padding-right: 16px;
 }
 
 button.btn-user-navigation:hover {
-    background-image: url("../img/login-icon-hover.png");
-    background-color: #f8f7f4;
-    color: #323232;
+  border: none;
+  background-color: #f8f7f4;
+  color: #323232;
 }
 
 button.btn-shopping-basket {
-    background-image: url("../img/empty-basket-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 16px 50%;
-    background-size: auto auto;
-    width: 100px;
-    height: 33px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    text-align: right;
-    padding-right: 17px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+  background-size: auto auto;
+  width: 100px;
+  height: 33px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  text-align: right;
+  padding-right: 17px;
 }
 
 button.btn-shopping-basket.filled {
-    background-image: url("../img/filled-basket-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 16px 50%;
-    background-size: auto auto;
-    width: 117px;
-    height: 32px;
-    background-color: rgba(248, 247, 244, 0.99);
-    border-radius: 16px;
-    text-align: right;
-    padding-right: 17px;
-}
-
-section.features {
-    background-image: url("../img/background-features.jpg");
-    width: 1146px;
-    height: 306px;
-    border-radius: 16px;
-}
-
-article.news-blog {
-    background-image: url("../img/background-strawberry.jpg");
-    width: 560px;
-    height: 220px;
-    border-radius: 16px;
-}
-
-section.subscription {
-    position: relative;
-    background-image: url("../img/mail-background.png");
-    width: 560px;
-    height: 220px;
-    border-radius: 16px;
-}
-
-div.mail-content {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #f8f7f4;
-    width: 549px;
-    height: 211px;
-    border-radius: 16px;
-}
-
-.social-buttons image {
-    width: 32px;
-    height: 32px;
-    border: black solid 30px;
-}
-
-.social-buttons li {
-    width: 32px;
-    height: 32px;
-    border: rgba(255, 255, 255, 0.5) solid 3px;
-    border-radius: 50%;
-}
-
-.btn-search form {
-    position: relative;
-    width: 341px;
-    height: 84px;
-    border-radius: 6px;
-    background-color: #f8f7f4;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}
-.btn-search input {
-    position: absolute;
-    width: 315px;
-    height: 48px;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: #d3d3d2 solid 1px;
-    border-radius: 5px;
-    position: absolute;
-}
-.btn-search input::placeholder {
-    padding-left: 15px;
-}
-
-/*------------------------*/
-.logon-div form {
-    position: relative;
-    width: 277px;
-    height: 214px;
-    border-radius: 6px;
-    background-color: #f8f7f4;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-    padding-top: 20px;
-}
-.logon-div input {
-    width: 245px;
-    height: 48px;
-    border: #d3d3d2 solid 1px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-left: 19px;
-
-}
-.logon-div input::placeholder {
-    padding-left: 15px;
-}
-
-.logon-div button {
-    width: 100px;
-    height: 44px;
-    /*узнать как точно высчитать радиус*/
-    border-radius: 50px;
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-    margin-left: 19px;
-    margin-right: 20px;
-    background: linear-gradient(to bottom, rgb(231,74,53), rgb(242,104,67));
-    color: #ffffff;
-    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-}
-/*наложение прозрачного градиента на не прозрачный не получилось не получилось доделать и переделать кнопки */
-.logon-div button:hover {
-    background: linear-gradient (to top, rgba (255,255,255,0.2), rgba (255,255,255,0.2)),
-                linear-gradient(to bottom, rgb(231,74,53), rgb(242,104,67));
-}
-.logon-div button:active {
-    background: linear-gradient(to bottom, rgb(242,104,67), rgb(231,74,53)),
-    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
-}
-
-.logon-div form a {text-align: right;} /*доделать*/
-
-.assortment img {
-    width: 267px;
-    height: 267px;
-    border-radius: 50%;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+  background-size: auto auto;
+  width: 117px;
+  height: 32px;
+  background-color: rgba(248, 247, 244, 0.99);
+  border-radius: 16px;
+  text-align: right;
+  padding-right: 17px;
 }
