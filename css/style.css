@@ -31,7 +31,7 @@ img {
 }
 
 /*временно спрятаны всплывающие окна*/
-.btn-search form, .logon-div, .feedback form, .checkout-section {
+.btn-search form, .logon-div, .feedback, .checkout-section {
   display: none;
 }
 
@@ -52,11 +52,11 @@ span.kg::before {
 }
 
 /*цвет ссылок хедер, футер, крошки*/
-.main-footer a, .main-header a, .breadcrumbs a {
+.main-footer a, .contacts a, .breadcrumbs a {
   color: #ffffff;
 }
 
-.main-footer a:hover, .main-header a:hover, .breadcrumbs a:hover {
+.main-footer a:hover, .contacts a:hover, .breadcrumbs a:hover {
   color: #ffbc9e;
 }
 
@@ -106,8 +106,8 @@ a.a-bold {
 }
 
 .upper-level > a {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 14px;
+  padding-left: 14px;
 
   border-radius: 16px;
 }
@@ -175,7 +175,7 @@ section.features {
 
 /*новости в блоге*/
 article.news-blog {
-  /* width: 560px; */
+   width: 560px;
   border-radius: 16px;
   background-image: url("../img/background-strawberry.jpg");
 }
@@ -384,4 +384,75 @@ button.btn-shopping-basket.filled {
   background-repeat: no-repeat;
   background-position: 16px 50%;
   background-size: auto auto;
+}
+
+
+/*----------------------------------------Стили для сетки*-----------------------------------*/
+body {
+  width: auto;
+}
+/*центрирование основных блоков*/
+.content-center {
+  width: 1146px;
+  margin: 0 auto;
+}
+/*меню второго уровня спрятано*/
+.main-navigation-catalog li{
+  display: none;
+}
+
+.main-header {
+  display: flex;
+justify-content: flex-start;
+  align-items: center;
+}
+.logo-index {
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+.main-navigation ul {
+  padding: 0;
+  display: flex;
+}
+.main-navigation {margin-right: auto;}
+/*правые кнопки*/
+.btn-shopping-basket {
+   margin-right: 0px;
+  margin-left: 5px;
+}
+.btn-user-navigation {margin-left: 5px;}
+/*пока пустой блок*/
+.rezerv-space {
+  height: 1127px;
+  margin-bottom: 60px;
+  background-color: rgba(0, 175, 175, 0.2);
+}
+
+.features {
+  min-height: 201px;
+margin-bottom: 40px;
+}
+.features h2 {
+  padding-top: 25px;
+  padding-left: 19px;
+
+}
+/*флекс блок новости и подписка*/
+.news-subscription {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/*пока пустой блок карта*/
+.map-space {
+  height: 430px;
+  background-color: rgba(0, 175, 175, 0.2);
+}
+
+.main-footer {
+  display: flex;
+  margin-top: 18px;
+  justify-content: space-between;
 }
