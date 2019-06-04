@@ -146,13 +146,14 @@ a.a-bold {
 }
 
 .contacts a {
+  letter-spacing: -0.4px;
+
   font-size: 22px;
   line-height: 24px;
 }
 
 /*особенности*/
 section.features {
-  /* width: 1146px; */
   border-radius: 16px;
   background-image: url("../img/background-features.jpg");
 }
@@ -166,6 +167,9 @@ section.features {
 }
 
 .features li {
+letter-spacing: 0.1px;
+  word-spacing: 0px;
+
   color: #323232;
 
   font-size: 16px;
@@ -400,7 +404,10 @@ button.btn-shopping-basket.filled {
 }
 
 .breadcrumbs li:not(:last-of-type)::after {
-  content: " »  ";
+  padding-right: 2px;
+  padding-left: 6px;
+
+  content: "»";
 
   color: #ffffff;
 }
@@ -425,6 +432,7 @@ body {
   display: flex;
 
   margin-bottom: 5px;
+
 
   justify-content: flex-start;
   align-items: center;
@@ -459,11 +467,11 @@ body {
 .rezerv-space {
   width: auto;
   height: 1127px;
-  margin-bottom: 60px;
+  margin-bottom: 69px;
 
   background-color: rgba(0, 175, 175, 0.2);
 }
-
+/*особенности*/
 .features {
   min-height: 201px;
   margin-bottom: 40px;
@@ -475,11 +483,25 @@ body {
 
 }
 
+ul.features {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.features li:nth-child(odd) {
+margin-right: 48px;
+}
+.features li{
+  max-width: 483px;
+  margin-right: auto;
+  margin-left: 36px;
+}
 /*флекс блок новости и подписка*/
 .news-subscription {
   display: flex;
 
   margin-bottom: 40px;
+
 
   justify-content: space-between;
 }
@@ -490,21 +512,43 @@ body {
 
   background-color: rgba(0, 175, 175, 0.2);
 }
-
+/*footer*/
 .main-footer {
   display: flex;
 
   margin-top: 18px;
 
+
   justify-content: space-between;
 }
+ul.footer-info{
+  display: flex;
 
+  flex-wrap: wrap;
+  max-width: 300px;
+  padding-left: 0px;
+
+}
+
+.footer-info li:nth-child(odd) {
+}
+.footer-info li{
+  width: 50%;
+
+}
+
+ul.social-buttons {
+  display: flex;
+}
+
+/*крошки+контакт*/
 .breadcrumbs-contacts {
   display: flex;
 
   width: auto;
   margin-bottom: 0px;
   padding-bottom: 0px;
+
 
   justify-content: flex-start;
 }
@@ -531,12 +575,13 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
+/*catalog*/
 .assortment ul {
   display: flex;
 
   margin: 0px;
   padding: 0px;
+
 
   flex-wrap: wrap;
   justify-content: space-between;
@@ -556,4 +601,6 @@ li.product {
 h1.header-catalog {
   margin: 3px 0px 0px 0px;
   padding: 0px;
+
+  letter-spacing: -0.1px;
 }
