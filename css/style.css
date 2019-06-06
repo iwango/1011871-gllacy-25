@@ -31,7 +31,7 @@ img {
 }
 
 /*временно спрятаны всплывающие окна*/
-.btn-search form, .logon-div, .feedback, .checkout-section {
+.checkout-section {
   display: none;
 }
 
@@ -82,7 +82,7 @@ span.kg::before {
   text-decoration: none;
 
   color: #323232;
-  background-color: #f8f7f4;
+  /*background-color: #f8f7f4;*/
 
   font-size: 14px;
   font-weight: normal;
@@ -93,26 +93,28 @@ a.a-bold {
   font-weight: bold;
 }
 
-.main-navigation-catalog a:hover {
+.main-navigation-catalog li:hover {
   background-color: #fbded7;
 }
 
-.main-navigation-catalog a:active {
+.main-navigation-catalog li:active {
   background-color: #f6b5a5;
 }
 
 .main-navigation-catalog .menu-activ {
   background-color: #d07058;
 }
+.menu-activ a {color: #ffffff;}
 
 .upper-level > a {
   padding-right: 14px;
   padding-left: 14px;
-
+  padding-top: 6px;
+  padding-bottom: 7px;
   border-radius: 16px;
 }
 
-.upper-level > a:hover {
+.upper-level >  a:hover {
   text-decoration: none;
 
   color: #323232;
@@ -191,14 +193,20 @@ article.news-blog {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+  margin-top: 23px;
+  margin-left: 20px;
+  margin-bottom: 5px;
 }
 
 .news-blog a {
+  display: block;
   color: #323232;
 
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
+  padding-left: 20px;
+  max-width: 310px;
 }
 
 /*подписка-----------------
@@ -227,7 +235,12 @@ div.mail-content {
   border-radius: 16px;
   background-color: #f8f7f4;
 }
-
+.mail-content p {
+  margin-top: 30px;
+  margin-left: 21px;
+letter-spacing: 0.05px;
+  padding-right: 10px;
+}
 /*----------------*/
 .subscription p {
   color: #5a5a5a;
@@ -325,7 +338,7 @@ a.product {
 button.btn-search {
   width: 33px;
   height: 33px;
-
+  background-image: url("../img/search-icon.png");
   border: none;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -335,6 +348,7 @@ button.btn-search {
 }
 
 button:hover.btn-search {
+  background-image: url("../img/search-icon-hover.png");
   border: none;
   background-color: #f8f7f4;
 
@@ -346,7 +360,7 @@ button.btn-user-navigation {
   padding-right: 16px;
 
   text-align: right;
-
+  background-image: url("../img/login-icon.png");
   border: none;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -356,6 +370,7 @@ button.btn-user-navigation {
 }
 
 button.btn-user-navigation:hover {
+  background-image: url("../img/login-icon-hover.png");
   color: #323232;
   border: none;
   background-color: #f8f7f4;
@@ -367,7 +382,7 @@ button.btn-shopping-basket {
   padding-right: 17px;
 
   text-align: right;
-
+  background-image: url("../img/empty-basket-icon.svg");
   border: none;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -382,7 +397,7 @@ button.btn-shopping-basket.filled {
   padding-right: 17px;
 
   text-align: right;
-
+  background-image: url("../img/filled-basket-icon.svg");
   border: none;
   border-radius: 16px;
   background-color: rgba(248, 247, 244, 0.99);
@@ -423,11 +438,6 @@ body {
   margin: 0 auto;
 }
 
-/*меню второго уровня спрятано*/
-.main-navigation-catalog li {
-  display: none;
-}
-
 .main-header {
   display: flex;
 
@@ -445,7 +455,7 @@ body {
 
 .main-navigation ul {
   display: flex;
-
+position: relative;
   padding: 0;
 }
 
@@ -523,22 +533,31 @@ margin-right: 48px;
 }
 ul.footer-info{
   display: flex;
-
+position: relative;
   flex-wrap: wrap;
-  max-width: 300px;
+  max-width: 315px;
   padding-left: 0px;
 
 }
 
 .footer-info li:nth-child(odd) {
+ width: 151px;
+ padding-left: 9px;
+ letter-spacing: 0.1px;
 }
-.footer-info li{
-  width: 50%;
+.footer-info li:first-child::before {
+  content: url("../img/heart-icon.svg");
+  position: absolute;
+  left: -13px;
+  top: 1px;
+}
 
-}
 
 ul.social-buttons {
   display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  min-width: 186px;
 }
 
 /*крошки+контакт*/
@@ -603,4 +622,149 @@ h1.header-catalog {
   padding: 0px;
 
   letter-spacing: -0.1px;
+}
+
+
+ul.main-navigation-catalog {
+  display: none;
+  position: absolute;
+  top: 31px;
+  left: -7px;
+  background-color: #f8f7f4;
+  border-radius: 4px;
+  margin: 0px 0px 0px 0px;
+  padding: 8px 0px 0px 0px;
+}
+.main-navigation-catalog li  {
+  padding: 8px 22px 5px 20px;
+
+}
+
+.main-navigation-catalog li:first-of-type {
+  /*исправить подчеркивание*/
+  border-bottom: 1px solid gray;
+  padding-top: 0px;
+  padding-bottom: 11px;
+}
+
+.main-navigation-catalog li:last-of-type {
+  margin-bottom: 7px;
+}
+
+.upper-level:hover ul.main-navigation-catalog {
+  display: block;
+}
+
+div.btn-search, div.btn-user-navigation {
+  position: relative;
+}
+
+.btn-search form {
+  display: none;
+  position: absolute;
+  top: 37px;
+  right: 0px;
+
+  min-width: 341px;
+  min-height: 84px;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.btn-search:hover form {
+  display: block;
+}
+
+.btn-search input {
+  min-width: 310px;
+}
+
+
+.btn-user-navigation form {
+  display: none;
+  position: absolute;
+  top: 37px;
+  right: 0px;
+
+  min-width: 277px;
+  min-height: 214px;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.btn-user-navigation:hover form {
+  display: block;
+}
+
+.btn-user-navigation input {
+  min-width: 240px;
+}
+
+
+section.feedback {
+  /*display: flex;*/
+  display: none;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 338px;
+  left: 715px;
+
+
+
+  max-width: 477px;
+  max-height: 442px;
+
+  min-width: 477px;
+  min-height: 442px;
+  background-color: #f8f7f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.social-buttons li {
+  border: rgba(255, 255, 255, 0.5) solid 3px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.social-buttons li:hover {
+  opacity: 1;
+}
+.social-buttons li:active {
+  opacity: 0.5;
+}
+.btn-twitter a {
+  display: block;
+  background-image: url("../img/twitter-icon.svg");
+  width: 32px;
+  height: 32px;
+  }
+
+.btn-instagram a {
+  display: block;
+  background-image: url("../img/instagram.svg");
+  width: 32px;
+  height: 32px;
+}
+.btn-facebook a {
+  display: block;
+  background-image: url("../img/facebook-icon.svg");
+  width: 32px;
+  height: 32px;
+}
+.btn-vk a {
+  display: block;
+  background-image: url("../img/vk-icon.svg");
+  width: 32px;
+  height: 32px;
+}
+
+.footer-copyrigh img {
+  padding: 2px 0px;
+}
+.footer-copyrigh p {
+  margin-top: 0px;
 }
