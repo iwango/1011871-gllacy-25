@@ -14,7 +14,7 @@
   </div>
   <nav class="main-navigation list-none">
     <ul>
-      <li class="upper-level"><a href="#">Каталог</a>
+      <li class="upper-level"><a href="catalog.html">Каталог</a>
         <ul class="main-navigation-catalog">
           <li>
             <a href="#" class="a-bold">Новинки</a>
@@ -53,8 +53,10 @@
         <label for="password-field" class="visibility-hidden">Введите пароль для входа</label>
         <input type="password" name="password-input" id="password-field" placeholder="Пароль">
         <button type="submit" name="submit-logon-form" id="submit-logon">Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
+        <div class="rem">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </div>
       </form>
 
     </div>
@@ -112,14 +114,14 @@
   </div>
   <section class="feedback">
     <h2 class="visibility-hidden">Задайте свой вопрос</h2>
-    <p>Мы обязательно Вам ответим!</p>
+    <p>Мы обязательно вам ответим!</p>
     <form action="https://echo.htmlacademy.ru/" name="feedback-form" method="post">
       <label for="feedback-name-field" class="visibility-hidden">Введите Ваше имя</label>
-      <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как Вас зовут?">
+      <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?">
       <label for="feedback-email-field" class="visibility-hidden">Введите почту для обратной связи</label>
       <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
       <label for="feedback-question-field" class="visibility-hidden">Введите вопрос</label>
-      <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="7"
+      <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="6"
                 placeholder="Напишите что-нибудь..."></textarea>
       <button type="submit" name="submit-feedback-form" id="submit-feedback">Отправить</button>
     </form>
