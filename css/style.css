@@ -451,10 +451,10 @@ body {
 }
 
 .main-header {
+  position: relative;
   display: flex;
-
+z-index: 1;
   margin-bottom: 5px;
-
 
 
   justify-content: flex-start;
@@ -490,11 +490,20 @@ body {
 
 /*пока пустой блок*/
 .rezerv-space {
-  width: auto;
+  position: relative;
+  width: 100%;
   height: 1127px;
   margin-bottom: 69px;
+}
+.fon-gradient {
+  position: absolute;
+  top: -82px;
+  left: 0px;
+z-index: -1;
+  width: 100%;
+  height: 100%;
 
-  background-color: rgba(0, 175, 175, 0.2);
+  background: radial-gradient(circle closest-corner at 50% 31%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.0) 75%);
 }
 
 /*особенности*/
@@ -524,6 +533,29 @@ ul.features {
   max-width: 483px;
   margin-right: auto;
   margin-left: 36px;
+  position: relative;
+}
+.features li::before {
+  position: absolute;
+  top: -12px;
+  left: -56px;
+}
+.features li:nth-child(even)::before {
+  position: absolute;
+  top: -12px;
+  left: -58px;
+}
+li.production::before {
+  content: url("../img/ice-cream.svg");
+}
+li.ingredients::before {
+  content: url("../img/cow.svg");
+}
+li.manufacturing::before {
+  content: url("../img/leaf.svg");
+}
+li.delivery::before {
+  content: url("../img/thermometer.svg");
 }
 
 /*флекс блок новости и подписка*/
@@ -533,23 +565,24 @@ ul.features {
   margin-bottom: 40px;
 
 
-
   justify-content: space-between;
 }
 
 /*пока пустой блок карта*/
 .map-space {
+  position: relative;
   height: 430px;
-
-  background-color: rgba(0, 175, 175, 0.2);
+  width: 1200px;
+  text-align: center;
+  margin-left: -27px;
 }
+
 
 /*footer*/
 .main-footer {
   display: flex;
 
   margin-top: 18px;
-
 
 
   justify-content: space-between;
@@ -601,7 +634,6 @@ ul.social-buttons {
   padding-bottom: 0px;
 
 
-
   justify-content: flex-start;
 }
 
@@ -634,7 +666,6 @@ ul.social-buttons {
 
   margin: 0px;
   padding: 0px;
-
 
 
   flex-wrap: wrap;
@@ -814,12 +845,12 @@ div.btn-search, div.btn-user-navigation {
 }
 
 section.feedback {
-  position: absolute;
+  position: fixed;
   top: 338px;
   left: 50%;
 
-  /* display: none; */
   display: block;
+  display: none;
   min-width: 477px;
 
   max-width: 477px;
@@ -1134,20 +1165,20 @@ p.total-price {
 }
 
 /*кнопки в разных состояниях*/
-#submit-logon, #submit-feedback, #submit-subscription-field, #chekout-btn {
+#submit-logon, #submit-feedback, #submit-subscription-field, #chekout-btn, #feedback-btn {
   background: linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
-#submit-logon:hover, #submit-feedback:hover, #submit-subscription-field:hover, #chekout-btn:hover {
+#submit-logon:hover, #submit-feedback:hover, #submit-subscription-field:hover, #chekout-btn:hover, #feedback-btn:hover {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
   linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
-#submit-logon:active, #submit-feedback:active, #submit-subscription-field:active, #chekout-btn:active {
+#submit-logon:active, #submit-feedback:active, #submit-subscription-field:active, #chekout-btn:active, #feedback-btn:active {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
   linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
@@ -1156,10 +1187,11 @@ p.total-price {
 
 .pagination {
   display: flex;
-float: right;
-align-content: flex-start;
-margin-top: 0px;
+  float: right;
+  align-content: flex-start;
+  margin-top: 0px;
 }
+
 .pagination a {
   display: block;
   width: 27px;
@@ -1174,26 +1206,113 @@ margin-top: 0px;
   line-height: 18px;
   font-weight: 500;
 }
+
 .pagination a {
   background-color: transparent;
   color: #fff;
 }
-.pagination a:hover:not(.active):not(.next-page):not(.previos-page) {
-background-color: rgba(255, 255, 255, 0.2);
+
+.pagination a:hover:not(.active):not(.next-page):not(.previos-page):not(:active) {
+  background-color: rgba(255, 255, 255, 0.2);
 }
+
 .pagination .active, .pagination a:active {
   background-color: #fff;
   color: #353535;
 }
 
-a.next-page{
+a.next-page {
   width: 22px;
   background-image: url("../img/arrow-page-next.png");
   background-repeat: no-repeat;
   background-position: right;
 }
+
 .previos-page {
- background-image: url("../img/arrow-page-previos.png");
+  background-image: url("../img/arrow-page-previos.png");
   background-repeat: no-repeat;
   background-position: left;
+}
+
+div.address {
+  position: absolute;
+  top: 62px;
+  right: 27px;
+  width: 302px;
+  height: 305px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.98);
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 15px;
+
+}
+
+.address p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-bottom: 1px;
+}
+
+.address address{
+  font-size: 18px;
+  color: #323232;
+  font-weight: bold;
+  line-height: 24px;
+  font-style: normal;
+  padding-right: 25px;
+margin-bottom: 18px;
+}
+.address a {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
+  margin-top: 5px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.address p:last-of-type {
+  margin-top: 3px;
+  margin-bottom: 24px;
+}
+
+.address button {
+
+  padding: 10px 29px;
+
+
+  color: #fefefe;
+  border: none;
+  border-radius: 25px/30px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.slider-imgs {
+  width: 100%;
+  position: relative;
+}
+.slider-img-1 {
+  position: absolute;
+  z-index: 0;
+  left: 150px;
+  top: -34px;
+  width: 50%;
+  height: 584px;
+  background: url("../img/slider-green-1.png") center no-repeat;
+}
+
+.slider-img-2 {
+position: absolute;
+  z-index: -1;
+  right: 129px;
+  top: 9px;
+  width: 50%;
+  height: 519px;
+  background: url("../img/slider-green-2.png") center no-repeat;
 }
