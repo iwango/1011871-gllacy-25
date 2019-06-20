@@ -22,6 +22,7 @@ img {
 /*Невидимые заголовки и блоки*/
 .visibility-hidden {
   position: absolute;
+  top: 550px;
 
   clip: rect(0 0 0 0);
 
@@ -161,6 +162,7 @@ a.a-bold {
 section.features {
   border-radius: 16px;
   background-image: url("../img/background-features.jpg");
+  margin-top: -63px;
 }
 
 .features h2 {
@@ -453,7 +455,7 @@ body {
 .main-header {
   position: relative;
   display: flex;
-z-index: 1;
+z-index: 2;
   margin-bottom: 5px;
 
 
@@ -492,14 +494,14 @@ z-index: 1;
 .rezerv-space {
   position: relative;
   width: 100%;
-  height: 1127px;
+  min-height: 807px;
   margin-bottom: 69px;
 }
 .fon-gradient {
   position: absolute;
   top: -82px;
   left: 0px;
-z-index: -1;
+z-index: 0;
   width: 100%;
   height: 100%;
 
@@ -1297,22 +1299,227 @@ margin-bottom: 18px;
   width: 100%;
   position: relative;
 }
-.slider-img-1 {
+.slider-block-1 .slider-img-1 {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   left: 150px;
   top: -34px;
   width: 50%;
   height: 584px;
-  background: url("../img/slider-green-1.png") center no-repeat;
+  background: url("../img/slider-1-1.png") center no-repeat;
 }
 
-.slider-img-2 {
+.slider-block-1 .slider-img-2 {
 position: absolute;
-  z-index: -1;
+  z-index: 0;
   right: 129px;
   top: 9px;
   width: 50%;
   height: 519px;
-  background: url("../img/slider-green-2.png") center no-repeat;
+  background: url("../img/slider-1-2.png") center no-repeat;
+}
+.slider-block-2 .slider-img-1 {
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  top: -34px;
+  width: 50%;
+  height: 584px;
+  background: url("../img/slider-2-1.png") center no-repeat;
+}
+
+.slider-block-2 .slider-img-2 {
+  position: absolute;
+  z-index: 0;
+  right: 129px;
+  top: 9px;
+  width: 50%;
+  height: 519px;
+  background: url("../img/slider-2-2.png") center no-repeat;
+}
+
+.slider-block-3 .slider-img-1 {
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  top: -34px;
+  width: 50%;
+  height: 584px;
+  background: url("../img/slider-3-1.png") center no-repeat;
+}
+
+.slider-block-3 .slider-img-2 {
+  position: absolute;
+  z-index: 0;
+  right: 129px;
+  top: 9px;
+  width: 50%;
+  height: 519px;
+  background: url("../img/slider-3-2.png") center no-repeat;
+}
+
+.slider-order {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -350px;
+  top: 310px;
+  width: 700px;
+text-align: center;
+}
+.slide-title {
+  /*width: 700px;*/
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 44px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls {
+  position: absolute;
+  top: 481px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.site-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  transition: background-image 1.3s ease, background-color 1.3s ease;
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  transition: background-image 1.3s ease, background-color 1.3s ease;
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  transition: background-image 1.3s ease, background-color 1.3s ease;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+.slider-block-1, .slider-block-2, .slider-block-3 {display: none;}
+
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3{
+  display: block;
+  background-color: #cccccc;
+}
+
+.promo-block {
+  position: relative;
+margin-top: 530px;
+  z-index: 3;
+  color: #ffffff;
+}
+.promo-1 {
+  width: 560px;
+  height: 229px;
+  float: left;
+  margin-left: 0px;
+  background: url("../img/promo-1-fon.jpg") center no-repeat;
+  border-radius: 16px;
+}
+
+.promo-2 {
+  width: 560px;
+  height: 229px;
+  float: right;
+  margin-right: 0px;
+  background: url("../img/promo-2-fon.jpg") center no-repeat;
+  border-radius: 16px;
+}
+
+.promo-block h3 {
+  margin: 15px 0px 17px 18px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: normal;
+}
+
+.promo-block p {
+  margin-left: 18px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.promo-block .button {
+  float: right;
+  margin: 22px 22px 0px 0px;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+li.hit::before {
+  position: absolute;
+  top: -42px;
+  /*left: 0px;*/
+
+  content: url("../img/index-catlog-hit.png");
 }
