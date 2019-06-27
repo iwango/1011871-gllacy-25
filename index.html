@@ -56,7 +56,7 @@
           <input type="email" name="email-input" id="email-field" placeholder="Электронная почта">
           <label for="password-field" class="visibility-hidden">Введите пароль для входа</label>
           <input type="password" name="password-input" id="password-field" placeholder="Пароль">
-          <button type="submit" name="submit-logon-form" id="submit-logon">Войти</button>
+          <button type="submit" name="submit-logon-form" id="submit-logon" class="submit-logon">Войти</button>
           <div class="rem">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -86,8 +86,11 @@
       </div>
       <div class="slider-block-1" id="slide1">
         <div class="slider-imgs">
-          <div class="slider-img-1"></div>
-          <div class="slider-img-2"></div>
+          <div class="slider-img-0">
+            <img src="img/slider-1-0.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+          </div>
+          <!--          <div class="slider-img-1"></div>-->
+          <!--          <div class="slider-img-2"></div>-->
         </div>
         <div class="slider-order">
           <h3 class="slide-title">
@@ -98,8 +101,11 @@
 
       <div class="slider-block-2" id="slide2">
         <div class="slider-imgs">
-          <div class="slider-img-1"></div>
-          <div class="slider-img-2"></div>
+          <div class="slider-img-0">
+            <img src="img/slider-2-0.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
+          </div>
+          <!--          <div class="slider-img-1"></div>-->
+          <!--          <div class="slider-img-2"></div>-->
         </div>
         <div class="slider-order">
           <h3 class="slide-title">
@@ -110,8 +116,11 @@
 
       <div class="slider-block-3" id="slide3">
         <div class="slider-imgs">
-          <div class="slider-img-1"></div>
-          <div class="slider-img-2"></div>
+          <div class="slider-img-0">
+            <img src="img/slider-3-0.png" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
+          </div>
+          <!--          <div class="slider-img-1"></div>-->
+          <!--          <div class="slider-img-2"></div>-->
         </div>
         <div class="slider-order">
           <h3 class="slide-title">
@@ -221,25 +230,12 @@
           <form action="https://echo.htmlacademy.ru/" name="subscription-form" method="post">
             <label for="subscription-email-field" class="visibility-hidden">Введите почту для подписки</label>
             <input type="email" name="subscription-email" id="subscription-email-field" placeholder="Электронная почта">
-            <button type="submit" name="submit-subscription" id="submit-subscription-field">Отправить</button>
+            <button type="submit" name="submit-subscription" id="submit-subscription-field" class="submit-subscription-field">Отправить</button>
           </form>
         </div>
       </section>
     </div>
-    <section class="feedback">
-      <h2 class="visibility-hidden">Задайте свой вопрос</h2>
-      <p>Мы обязательно вам ответим!</p>
-      <form action="https://echo.htmlacademy.ru/" name="feedback-form" method="post">
-        <label for="feedback-name-field" class="visibility-hidden">Введите Ваше имя</label>
-        <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?">
-        <label for="feedback-email-field" class="visibility-hidden">Введите почту для обратной связи</label>
-        <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
-        <label for="feedback-question-field" class="visibility-hidden">Введите вопрос</label>
-        <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="6"
-                  placeholder="Напишите что-нибудь..."></textarea>
-        <button type="submit" name="submit-feedback-form" id="submit-feedback">Отправить</button>
-      </form>
-    </section>
+
     <div class="map-space content-center">
       <img src="img/map.png" width="1200" height="430" alt="Карта проезда">
       <div class="address">
@@ -252,7 +248,7 @@
         <p>Для заказов по телефону:</p>
         <a href="tel:+78124502525">8 812 450-25-25</a>
         <p>(с 10 до 20 ежедневно)</p>
-        <button class="btn-feedback" id="feedback-btn">Форма обратной связи</button>
+        <button class="btn-feedback feedback-btn" id="feedback-btn">Форма обратной связи</button>
       </div>
     </div>
   </main>
@@ -284,5 +280,25 @@
   </footer>
 </div>
 
+<div class="full-screen-field"></div>
+<section class="feedback">
+
+  <h2 class="visibility-hidden">Задайте свой вопрос</h2>
+  <p>Мы обязательно вам ответим!</p>
+  <form action="https://echo.htmlacademy.ru/" name="feedback-form" method="post">
+    <label for="feedback-name-field" class="visibility-hidden">Введите Ваше имя</label>
+    <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?">
+    <label for="feedback-email-field" class="visibility-hidden">Введите почту для обратной связи</label>
+    <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+    <label for="feedback-question-field" class="visibility-hidden">Введите вопрос</label>
+    <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="6"
+              placeholder="Напишите что-нибудь..."></textarea>
+    <button type="submit" name="submit-feedback-form" id="submit-feedback" class="submit-feedback">Отправить</button>
+    <button type="button" class="feedback-close"><img src="img/feedback-close.svg" width="18" height="17" alt="Закрыть окно обратной связи"></button>
+  </form>
+
+</section>
+
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@
         <input type="email" name="email-input" id="email-field" placeholder="Электронная почта">
         <label for="password-field" class="visibility-hidden">Введите пароль для входа</label>
         <input type="password" name="password-input" id="password-field" placeholder="Пароль">
-        <button type="submit" name="submit-logon-form" id="submit-logon">Войти</button>
+        <button type="submit" name="submit-logon-form" id="submit-logon" class="submit-logon">Войти</button>
         <div class="rem">
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
@@ -98,7 +98,7 @@
         </tr>
       </table>
       <p class="total-price">Итого: 750 руб.</p>
-      <button class="checkout-btn" id="chekout-btn">Оформить заказ</button>
+      <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
     </section>
   </div>
 </header>
@@ -119,10 +119,93 @@
   </div>
   <h1 class="header-catalog">Сливочное мороженое</h1>
   <div class="filters">
-    <form action="https://echo.htmlacademy.ru/" name="filters-form" method="get">
-      <fieldset name="sorting">
+    <form action="https://echo.htmlacademy.ru/" name="filter-form" method="get">
+      <div class="filter-up-row">
+        <fieldset name="sorting">
+          <legend>Сортировка:</legend>
+          <div class="filter-background sorting">
+            <select class="filter-sorting" id="filter-sorting" name="filter-sorting">
+              <option value="popularity">по популярности</option>
+              <option value="low-price">сначала недорогие</option>
+              <option value="high-price">сначала дорогие</option>
+              <option value="fat-content">по жирности</option>
+            </select>
+            <span></span>
+          </div>
+        </fieldset>
 
-      </fieldset>
+        <fieldset class="ranges">
+          <legend class="price-controls">
+            <span class="range-label">Цена:</span>
+            <label class="min-price"><input type="text" name="min-price" value="100"></label>
+            <span> – </span>
+            <label class="max-price"><input type="text" name="max-price" value="500"></label>
+          </legend>
+          <div class="filter-background">
+            <div class="range-control">
+              <div class="scale-start"></div>
+              <div class="range-toggle-min"></div>
+              <div class="range-price"></div>
+              <div class="range-toggle-max"></div>
+              <div class="scale-end"></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fat-content">
+          <legend>Жирность:</legend>
+          <div class="filter-background">
+            <ul>
+              <li class="filter-option">
+                <input class="visibility-hidden radio-fat" type="radio" id="fat-0" name="filters-fat" value="0">
+                <label for="fat-0">0%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visibility-hidden radio-fat" type="radio" id="fat-10" name="filters-fat" value="10" checked="">
+                <label for="fat-10"> до 10%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visibility-hidden radio-fat" type="radio" id="fat-30" name="filters-fat" value="30">
+                <label for="fat-30">до 30%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visibility-hidden radio-fat" type="radio" id="fat-30-more" name="filters-fat" value="30-more">
+                <label for="fat-30-more">выше 30%</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+      <div class="filter-down-row">
+        <fieldset class="fillers">
+          <legend>Наполнители</legend>
+          <div class="filter-background">
+            <ul>
+              <li class="filter-option checklist">
+                <input class=" checkbox-filter" type="checkbox" id="filler-chocolate" name="filters-fillers" value="chocolate" checked="">
+                <label for="filler-chocolate">шоколадные</label>
+              </li>
+              <li class="filter-option checklist">
+                <input class="checkbox-filter" type="checkbox" id="filler-sugar" name="filters-fillers" value="shugar" checked="">
+                <label for="filler-sugar">сахарные присыпки</label>
+              </li>
+              <li class="filter-option checklist">
+                <input class="checkbox-filter" type="checkbox" id="filler-fruit" name="filters-fillers" value="fruit">
+                <label for="filler-fruit">фрукты</label>
+              </li>
+              <li class="filter-option checklist">
+                <input class="checkbox-filter" type="checkbox" id="filler-syrup" name="filters-fillers" value="syrup">
+                <label for="filler-syrup">сиропы</label>
+              </li>
+              <li class="filter-option checklist">
+                <input class="checkbox-filter" type="checkbox" id="filler-jam" name="filters-fillers" value="jam" checked="" disabled>
+                <label for="filler-jam">джемы</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <button class="filters-submit" type="submit">Применить</button>
+      </div>
     </form>
   </div>
 
@@ -301,7 +384,7 @@
       <label for="feedback-question-field" class="visibility-hidden">Введите вопрос</label>
       <textarea name="feedback-question" id="feedback-question-field" cols="50" rows="7"
                 placeholder="Напишите что-нибудь..."></textarea>
-      <button type="submit" name="submit-feedback-form" id="submit-feedback">Отправить</button>
+      <button type="submit" name="submit-feedback-form" id="submit-feedback" class="submit-feedback">Отправить</button>
     </form>
   </section>
 
