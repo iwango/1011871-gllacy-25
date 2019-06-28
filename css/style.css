@@ -522,10 +522,10 @@ body {
 }
 
 /*пока пустой блок*/
-.rezerv-space {
+.sliders-offers {
   position: relative;
 
-  width: 100%;
+  /*width: 100%;*/
   min-height: 807px;
   margin-bottom: 69px;
 }
@@ -617,13 +617,19 @@ li.delivery::before {
 .map-space {
   position: relative;
 
-  width: 1200px;
+  width: 100vw;
   height: 430px;
-  margin-left: -27px;
+  /*margin-left: -27px;*/
 
-  text-align: center;
+  /*text-align: center;*/
 }
 
+.adress-wrap {
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 18.3%;
+}
 
 /*footer*/
 .main-footer {
@@ -1359,6 +1365,7 @@ div.address {
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
+  padding-right: 125px;
 }
 
 .address address {
@@ -2095,15 +2102,21 @@ legend.price-controls {
 /*стилизация импутов*/
 .btn-search input:hover {
   border-width: 2px;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .btn-search input:focus {
   border-color: rgba(46, 136, 2288, 0.52);
+  outline: 0;
+  outline-offset: 0;
 }
 
 .btn-search input {
   color: #323232;
   font-weight: bold;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .btn-search input::-webkit-input-placeholder {
@@ -2130,15 +2143,21 @@ legend.price-controls {
 
 .btn-user-navigation input:hover {
   border-width: 2px;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .btn-user-navigation input:focus {
   border-color: rgba(46, 136, 2288, 0.52);
+  outline: 0;
+  outline-offset: 0;
 }
 
 .btn-user-navigation input {
   color: #323232;
   font-weight: bold;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .btn-user-navigation input::-webkit-input-placeholder {
@@ -2163,22 +2182,28 @@ legend.price-controls {
 
 /**/
 
-.mail-content input:invalid {
-  box-shadow: none;
-}
+/*.mail-content input:invalid {*/
+/*  box-shadow: none;*/
+/*}*/
 /*.mail-content input {outline: none;}*/
 
 .mail-content input:hover {
+  outline: 0;
+  outline-offset: 0;
   border-width: 2px;
 }
 
 .mail-content input:focus {
   border-color: rgba(46, 136, 2288, 0.52);
+  outline: 0;
+  outline-offset: 0;
 }
 
 .mail-content input {
   color: #323232;
   font-weight: bold;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .mail-content input::-webkit-input-placeholder {
@@ -2205,15 +2230,21 @@ legend.price-controls {
 
 .feedback input:hover {
   border-width: 2px;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .feedback input:focus {
   border-color: rgba(46, 136, 2288, 0.52);
+  outline: 0;
+  outline-offset: 0;
 }
 
 .feedback input {
   color: #323232;
   font-weight: bold;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .feedback input::-webkit-input-placeholder {
@@ -2238,15 +2269,21 @@ legend.price-controls {
 
 .feedback textarea:hover {
   border-width: 2px;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .feedback textarea:focus {
   border-color: rgba(46, 136, 2288, 0.52);
+  outline: 0;
+  outline-offset: 0;
 }
 
 .feedback textarea {
   color: #323232;
   font-weight: bold;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .feedback textarea::-webkit-input-placeholder {
@@ -2385,3 +2422,4 @@ div.btn-user-navigation {
 div.btn-shopping-basket {
   padding: 13px 0px;
 }
+
