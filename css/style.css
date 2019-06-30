@@ -497,12 +497,14 @@ body {
 .logo-index {
   margin-top: 9px;
   margin-right: 10px;
+  min-width: 154px;
 }
 
 .main-navigation ul {
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
 
   padding: 0;
 }
@@ -1623,28 +1625,33 @@ div.address {
   padding-top: 530px;
 
   color: #ffffff;
+  min-height: 229px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-1 {
   float: left;
 
-  width: 560px;
-  height: 229px;
+ width: 560px;
+  min-height: 229px;
   margin-left: 0px;
 
   border-radius: 16px;
   background: url("../img/promo-1-fon.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .promo-2 {
   float: right;
 
   width: 560px;
-  height: 229px;
+  min-height: 229px;
   margin-right: 0px;
 
   border-radius: 16px;
   background: url("../img/promo-2-fon.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .promo-block h3 {
@@ -1666,7 +1673,7 @@ div.address {
 .promo-block .button {
   float: right;
 
-  margin: 22px 22px 0px 0px;
+  margin: 22px;
   padding: 12px 20px;
 
   font-size: 18px;
