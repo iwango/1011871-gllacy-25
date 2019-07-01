@@ -6,7 +6,6 @@ var btnFeedbackClose = document.querySelector(".feedback-close");
 
 
 btnFeedbackClick.addEventListener("click", function () {
-  console.log("клик по кнопке");
   popup.classList.add("modal-show");
   popupFulscreen.classList.add("modal-show")
 });
