@@ -630,7 +630,7 @@ align-content: center;
 .map-space {
   position: relative;
 
-  width: 100vw;
+  width: 100%;
   height: 430px;
   /*margin-left: -27px;*/
 margin-top: -20px;
@@ -1116,7 +1116,8 @@ div.btn-search, div.btn-user-navigation {
   position: relative;
   margin-left: -2px;
   margin-top: -106px;
-  margin-bottom: 75px;
+  /*margin-bottom: 75px;*/
+  padding-bottom: 75px;
   /*top: 123px;*/
   /*left: -2px;*/
   z-index: 215;
