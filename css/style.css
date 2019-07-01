@@ -122,7 +122,7 @@ span.kg::before {
   border-radius: 16px;
 }
 
-.upper-level:hover > a {
+.upper-level:hover > a, .nav-up-anchor:focus {
   cursor: pointer;
   text-decoration: none;
 
@@ -775,10 +775,10 @@ h1.header-catalog {
 
 ul.main-navigation-catalog {
   position: absolute;
-  top: 44px;
+  top: -444px;
   left: -7px;
 
-  display: none;
+  display: block;
 
   margin: 0px 0px 0px 0px;
   padding: 8px 0px 0px 0px;
@@ -805,10 +805,14 @@ ul.main-navigation-catalog {
   margin-bottom: 7px;
 }
 
-.upper-level:hover ul.main-navigation-catalog {
+.upper-level:hover ul.main-navigation-catalog, .nav-up-anchor:focus + .main-navigation-catalog {
   display: block;
+  top: 44px;
+  /*background-color: #ec593c;*/
 }
-
+.main-navigation-catalog:focus-within {
+  top: 44px;
+}
 
 div.btn-search, div.btn-user-navigation {
   position: relative;
@@ -2478,3 +2482,4 @@ div.btn-shopping-basket {
   padding: 13px 0px;
 }
 
+.map-space iframe {width: 100%;}

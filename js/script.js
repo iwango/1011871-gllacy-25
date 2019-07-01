@@ -20,6 +20,3 @@ btnFeedbackClose.addEventListener("click", function () {
   popup.classList.remove("modal-show");
   popupFulscreen.classList.remove("modal-show");
 });
-
-
-
