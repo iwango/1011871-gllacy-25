@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  width: 1250px;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
 
   background-color: #849d8f;
 
@@ -459,9 +459,9 @@ button.btn-shopping-basket.filled {
   color: #ffffff;
 }
 
-body {
-  width: auto;
-}
+/*body {*/
+/*  width: auto;*/
+/*}*/
 
 .content-center {
   width: 1200px;
@@ -621,7 +621,7 @@ li.delivery::before {
 .main-footer {
   display: flex;
 
-  margin-top: 18px;
+  margin-top: 15px;
 
 
 
@@ -645,13 +645,14 @@ ul.footer-info {
 .footer-info li:nth-child(odd) {
   width: 151px;
   padding-left: 9px;
+  padding-bottom: 3px;
 
   letter-spacing: 0.1px;
 }
 
 .footer-info li:first-child::before {
   position: absolute;
-  top: 1px;
+  top: 3px;
   left: -13px;
 
   content: url("../img/heart-icon.svg");
@@ -662,7 +663,7 @@ ul.social-buttons {
 
   min-width: 186px;
   padding-left: 0px;
-
+padding-top: 3px;
 
 
   justify-content: space-between;
@@ -834,7 +835,6 @@ div.btn-search, div.btn-user-navigation {
   min-height: 214px;
 
   text-align: center;
-  vertical-align: center;
 
   border-radius: 6px;
   background-color: #f8f7f4;
@@ -847,13 +847,14 @@ div.btn-search, div.btn-user-navigation {
 
 .btn-user-navigation input {
   display: inline-block;
+  float: left;
 
   min-width: 240px;
-  height: 42px;
+  /*height: 42px;*/
   margin-top: 21px;
   margin-bottom: 1px;
-  margin-left: 5px;
-  padding-left: 13px;
+  margin-left: 20px;
+  padding: 8px 13px;
 
   color: #999999;
   border: 1px solid #d3d3d2;
@@ -868,7 +869,7 @@ div.btn-search, div.btn-user-navigation {
   float: left;
 
   margin: 20px 20px 0px 20px;
-  padding: 11px 25px;
+  padding: 10px 25px;
 
   color: #fefefe;
   border: none;
@@ -881,6 +882,7 @@ div.btn-search, div.btn-user-navigation {
 }
 
 .rem {
+  float: left;
   margin-top: 22px;
 
   text-align: left;
@@ -1098,7 +1100,7 @@ p.price {
 .price-description a {
   display: block;
 
-  padding: 0px 7px;
+  padding: 0px 17px;
 
   text-align: center;
 }
@@ -1125,6 +1127,8 @@ div.assortment {
   height: 54px;
 
   border-bottom: 1px solid #ffffff;
+  padding-bottom: 56px;
+  margin-bottom: 17px;
 }
 
 .activ-page > a {
@@ -1169,7 +1173,7 @@ div.assortment {
 
 }
 
-button.checkout-btn {
+a.checkout-btn {
   float: right;
 
   margin: -2px 15px 21px 20px;
@@ -1338,8 +1342,8 @@ a.next-page {
 
 div.address {
   position: absolute;
-  top: 62px;
-  right: 27px;
+  top: 61px;
+  right: 247px;
 
   width: 302px;
   min-height: 305px;
@@ -1361,6 +1365,7 @@ div.address {
   font-weight: normal;
   line-height: 20px;
 }
+.address p:first-child { padding-right: 125px;}
 
 .address address {
   margin-bottom: 18px;
@@ -1649,29 +1654,33 @@ div.address {
 }
 
 .promo-block h3 {
-  margin: 15px 0px 17px 18px;
+  margin: 15px 0px 16px 18px;
 
   font-size: 35px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 41px;
 }
 
 .promo-block p {
-  margin-left: 18px;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 25px;
 
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 22px;
 }
 
 .promo-block .button {
   float: right;
 
-  margin: 22px;
-  padding: 12px 20px;
+  margin-right: 23px;
+  margin-top: 43px;
+  margin-bottom: 23px;
+  padding: 11px 22px;
 
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 24px;
 }
 
@@ -1691,7 +1700,7 @@ li.hit::before {
 .filter-up-row {
   display: flex;
 
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding-top: 25px;
 }
 
@@ -1721,8 +1730,9 @@ li.hit::before {
 }
 
 .filter-sorting {
-  padding-right: 17px;
-
+  /*margin-top: -1px;*/
+  min-width: 170px;
+  padding: 0px 17px 0px 0px;
   color: inherit;
   border: none;
   background-color: transparent;
@@ -1749,6 +1759,7 @@ li.hit::before {
 
 .sorting {
   position: relative;
+  /*min-width: 193px;*/
 }
 
 .sorting span {
@@ -1788,7 +1799,7 @@ li.hit::before {
 
 .ranges .filter-background {
   width: 220px;
-  height: 37px;
+  /*height: 37px;*/
 }
 
 legend.price-controls {
