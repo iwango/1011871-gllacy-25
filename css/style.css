@@ -175,6 +175,7 @@ section.features {
   padding-left: 0px;
   padding-right: 0px;
   border-radius: 16px;
+  background-color: #fae4b4;
   background-image: url("../img/background-features.jpg");
 }
 
@@ -203,6 +204,7 @@ article.news-blog {
   margin-bottom: 20px;
 
   border-radius: 16px;
+  background-color: #f8d2c4;
   background-image: url("../img/background-strawberry.jpg");
   background-size: cover;
 }
@@ -241,6 +243,7 @@ section.subscription {
   margin-bottom: 20px;
 
   border-radius: 16px;
+  background-color: #fdf4e3;
   background-image: url("../img/mail-background.png");
   background-size: cover;
 }
@@ -1648,6 +1651,7 @@ div.address {
   margin-left: 0px;
 
   border-radius: 16px;
+  background-color: #770511;
   background: url("../img/promo-1-fon.jpg") center no-repeat;
   background-size: cover;
 }
@@ -1660,6 +1664,7 @@ div.address {
   margin-right: 0px;
 
   border-radius: 16px;
+  background-color: #512517;
   background: url("../img/promo-2-fon.jpg") center no-repeat;
   background-size: cover;
 }
