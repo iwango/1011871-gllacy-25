@@ -920,7 +920,7 @@ div.btn-search, div.btn-user-navigation {
 
 .feedback {
   position: fixed;
-  z-index: 99;
+  z-index: 235;
   top: 50%;
   left: 50%;
 
@@ -2346,7 +2346,7 @@ legend.price-controls {
 
 .full-screen-field {
   position: fixed;
-  z-index: 55;
+  z-index: 234;
   top: 0px;
   left: 0px;
 
