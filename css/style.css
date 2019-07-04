@@ -929,7 +929,7 @@ div.btn-search, div.btn-user-navigation {
   min-width: 477px;
   max-width: 477px;
   min-height: 442px;
-  max-height: 442px;
+  /*max-height: 442px;*/
   margin-top: -239px;
   margin-left: -237px;
 
@@ -986,6 +986,7 @@ div.btn-search, div.btn-user-navigation {
 .feedback textarea {
   max-width: 428px;
   margin-left: 24px;
+  margin-bottom: 94px;
   padding: 10px 13px 16px 13px;
 
   border: 1px solid #d3d3d2;
@@ -994,9 +995,10 @@ div.btn-search, div.btn-user-navigation {
 }
 
 .feedback button {
+  position: relative;
   float: right;
 
-  margin: 25px 23px 0px 20px;
+  margin: 25px 23px 25px 20px;
   padding: 10px 25px;
 
   color: #fefefe;
@@ -1007,6 +1009,12 @@ div.btn-search, div.btn-user-navigation {
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
+}
+
+.feedback .submit-feedback {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .mail-content input {
@@ -2304,6 +2312,7 @@ legend.price-controls {
 }
 
 .feedback textarea {
+  /*box-sizing: padding-box;*/
   color: #323232;
   outline: 0;
   outline-offset: 0;
