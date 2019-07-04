@@ -170,8 +170,10 @@ span.kg::before {
 }
 
 section.features {
+  width: 1146px;
   margin-top: -63px;
-
+  padding-left: 0px;
+  padding-right: 0px;
   border-radius: 16px;
   background-image: url("../img/background-features.jpg");
 }
@@ -518,7 +520,8 @@ button.btn-shopping-basket.filled {
   margin-bottom: 69px;
 }
 
-.fon-gradient {
+.sliders-offers::before {
+  content: "";
   position: absolute;
   z-index: 0;
   top: -82px;
@@ -737,7 +740,7 @@ li.product {
 .filters {
   min-height: 135px;
   margin-bottom: 83px;
-
+  color: #ffffff;
 
 }
 
@@ -1573,7 +1576,7 @@ div.address {
   position: absolute;
   z-index: 20;
   top: 481px;
-  left: 0;
+  left: 27px;
 
   font-size: 0;
 }
@@ -1701,9 +1704,9 @@ li.hit::before {
   content: url("../img/index-catlog-hit.png");
 }
 
-.filters form {
-  color: #ffffff;
-}
+/*.filters form {*/
+/*  color: #ffffff;*/
+/*}*/
 
 .filter-up-row {
   display: flex;
