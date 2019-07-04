@@ -82,7 +82,7 @@ span.kg::before {
   line-height: 16px;
 }
 
-.footer-info .a-bold {
+.footer-info .a-bold, .main-navigation-catalog .a-bold {
   font-weight: bold;
 }
 
@@ -1334,7 +1334,7 @@ p.total-price {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination .active, .pagination a:active {
+.pagination .active, .pagination a:active:not(.next-page):not(.previos-page) {
   color: #353535;
   background-color: #fff;
 }
@@ -1573,6 +1573,11 @@ div.address {
   border: 2px solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
+  opacity: 0.8;
+}
+
+.slider-controls label:hover, .slider-controls label:focus {
+  opacity: 1;
 }
 
 .slider-controls {
