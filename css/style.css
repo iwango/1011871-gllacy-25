@@ -483,7 +483,7 @@ button.btn-shopping-basket.filled {
 
 
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo-index {
@@ -670,14 +670,20 @@ ul.footer-info {
 ul.social-buttons {
   display: flex;
 
-  min-width: 186px;
-padding-top: 3px;
+  width: 186px;
+  padding-top: 3px;
   padding-left: 0px;
 
 
 
   justify-content: space-between;
+  flex-wrap: wrap;
+  /*max-width: 33%;*/
 }
+
+/*.footer-social {*/
+/*  max-width: 33.33%;*/
+/*}*/
 
 .breadcrumbs-contacts {
   position: relative;
@@ -700,6 +706,7 @@ padding-top: 3px;
 }
 
 .contacts {
+  min-width: 170px;
   margin-right: 0px;
   margin-left: auto;
   padding-bottom: 0px;
@@ -1136,9 +1143,11 @@ div.assortment {
 }
 
 .paginator {
-  height: 54px;
-  margin-bottom: 17px;
-  padding-bottom: 56px;
+  display: inline-block;
+  width: 100%;
+  min-height: 54px;
+  margin-bottom: -2px;
+  padding-bottom: 13px;
 
   border-bottom: 1px solid #ffffff;
 }
@@ -1297,7 +1306,7 @@ p.total-price {
 .pagination {
   display: flex;
   float: right;
-
+flex-wrap: wrap;
   margin-top: 0px;
 
 
@@ -1505,13 +1514,14 @@ div.address {
 }
 
 .slider-order {
-  position: absolute;
+  position: relative;
   z-index: 5;
-  top: 310px;
+  /*top: 274px;*/
   left: 50%;
 
   width: 700px;
   margin-left: -350px;
+  padding-top: 274px;
 
   text-align: center;
 }
@@ -1630,7 +1640,7 @@ div.address {
 #product-3:checked ~ .site-wrapper #slide3 {
   display: block;
 
-  background-color: #cccccc;
+  /*background-color: #cccccc;*/
 }
 
 .promo-block {
@@ -1640,7 +1650,7 @@ div.address {
   display: flex;
 
   min-height: 229px;
-  padding-top: 530px;
+  padding-top: 41px;
 
   color: #ffffff;
 
@@ -1745,9 +1755,14 @@ li.hit::before {
 
 .filter-background {
   padding: 7px 12px;
-
+  /*padding-right: 12px;*/
+  /*padding-left: 12px;*/
   border-radius: 25px;
   background-color: rgba(255, 255, 255, .3);
+}
+
+.fat-content .filter-background {
+  padding: 0px 12px;
 }
 
 .filter-sorting {
@@ -1904,6 +1919,7 @@ legend.price-controls {
 
 .fat-content ul {
   display: flex;
+  flex-wrap: wrap;
 
   min-width: 389px;
   min-height: 20px;
@@ -1915,24 +1931,27 @@ legend.price-controls {
 
 
 
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
 }
 
 .fat-content li {
   position: relative;
 
-  margin-right: 4px;
-  margin-left: -4px;
+  margin-right: 54px;
+  margin-left: -5px;
+  padding: 7px 0px;
 
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
 }
-
+.fat-content li:last-of-type {
+  margin-right: 4px;
+}
 .fat-content label::before {
   position: absolute;
-  top: -3px;
+  top: 4px;
   left: -31px;
 
   width: 22px;
@@ -1955,7 +1974,7 @@ legend.price-controls {
 
 .radio-fat:checked ~ label::after {
   position: absolute;
-  top: 4px;
+  top: 11px;
   left: -24px;
 
   width: 8px;
@@ -2019,8 +2038,8 @@ legend.price-controls {
 
 
 
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
   align-items: center;
 }
 
@@ -2030,8 +2049,13 @@ legend.price-controls {
 
 .fillers li {
   position: relative;
-
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-right: 55px;
+}
+
+.fillers .filter-background {
+  padding: 0px 12px;
 }
 
 .fillers li:last-of-type {
@@ -2050,7 +2074,7 @@ legend.price-controls {
 .checkbox-filter ~ label::before {
   position: absolute;
   z-index: 5;
-  top: -4px;
+  top: 4px;
   left: -35px;
 
   width: 24px;
@@ -2420,14 +2444,17 @@ li.product:hover img {
 
 .btn-search {
   padding: 13px 0px;
+  margin-top: 5px;
 }
 
 div.btn-user-navigation {
   padding: 13px 0px;
+  margin-top: 9px;
 }
 
 div.btn-shopping-basket {
   padding: 13px 0px;
+  margin-top: 9px;
 }
 
 .map-space iframe {
