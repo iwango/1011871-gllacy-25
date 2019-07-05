@@ -383,8 +383,12 @@ button.btn-search {
   background-image: url("../img/search-icon-hover.png");
 }
 
-.btn-search:hover form {
-  display: block;
+.btn-search:hover form, .btn-search:focus + form {
+  /*display: block;*/
+  top: 54px;
+}
+.btn-search:focus-within form{
+  top: 54px;
 }
 
 button.btn-user-navigation {
@@ -811,10 +815,10 @@ div.btn-search, div.btn-user-navigation {
 
 .btn-search form {
   position: absolute;
-  top: 50px;
+  top: -540px;
   right: 0px;
 
-  display: none;
+  display: block;
 
   min-width: 341px;
   min-height: 84px;
@@ -845,10 +849,10 @@ div.btn-search, div.btn-user-navigation {
 
 .btn-user-navigation form {
   position: absolute;
-  top: 50px;
+  top: -540px;
   right: 0px;
 
-  display: none;
+  display: block;
 
   min-width: 277px;
   min-height: 214px;
@@ -860,8 +864,11 @@ div.btn-search, div.btn-user-navigation {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.btn-user-navigation:hover form {
-  display: block;
+.btn-user-navigation:hover form, .btn-user-navigation:focus + form {
+  top: 50px;
+}
+.btn-user-navigation:focus-within form{
+  top: 50px;
 }
 
 .btn-user-navigation input {
@@ -985,6 +992,7 @@ div.btn-search, div.btn-user-navigation {
 
 .feedback textarea {
   max-width: 428px;
+  min-width: 267px;
   margin-left: 24px;
   margin-bottom: 94px;
   padding: 10px 13px 16px 13px;
@@ -1599,11 +1607,12 @@ div.address {
 }
 
 .slider-controls {
-  position: absolute;
+  position: relative;
   z-index: 20;
-  top: 481px;
-  left: 27px;
-
+  /*top: 481px;*/
+  /*left: 27px;*/
+  margin-top: -43px;
+  margin-bottom: 23px;
   font-size: 0;
 }
 
@@ -1977,7 +1986,7 @@ legend.price-controls {
 }
 
 .radio-fat {
-  display: none;
+  /*display: none;*/
 }
 
 .radio-fat:checked ~ label::after {
@@ -2052,7 +2061,7 @@ legend.price-controls {
 }
 
 .checkbox-filter {
-  display: none;
+  /*display: none;*/
 }
 
 .fillers li {
@@ -2412,6 +2421,12 @@ li.product:hover {
   background-color: rgba(248, 247, 244, 0.2);
 }
 
+li.product:focus-within {
+  z-index: 5;
+
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
 .button.quick-view {
   position: absolute;
   z-index: 5;
@@ -2430,6 +2445,10 @@ li.product:hover {
 li.product:hover .quick-view {
   display: inline-block;
 }
+li.product:focus-within .quick-view {
+  display: inline-block;
+}
+
 
 .product img {
   position: relative;
@@ -2468,4 +2487,22 @@ div.btn-shopping-basket {
 
 .map-space iframe {
   width: 100%;
+}
+
+
+.checkbox-filter:focus + label::before, .checkbox-filter:focus + label {
+  opacity: 1;
+}
+
+.radio-fat:focus ~ label::before, .radio-fat:focus ~ label::after, .radio-fat:focus ~ label {
+  opacity: 1;
+}
+
+.hide-filter-input {
+  position: absolute;
+  /*top: 550px;*/
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

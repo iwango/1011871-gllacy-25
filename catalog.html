@@ -44,7 +44,7 @@
     <button class="btn-search"><span class="visibility-hidden">Поиск</span></button>
     <form action="https://echo.htmlacademy.ru/" name="search-form" method="get">
       <label for="search-field" class="visibility-hidden">Введите запрос для поиска</label>
-      <input type="text" name="search-input" id="search-field" autofocus placeholder="Что ищем?">
+      <input type="text" name="search-input" id="search-field" placeholder="Что ищем?">
     </form>
   </div>
   <div class="btn-user-navigation">
@@ -144,9 +144,9 @@
           <div class="filter-background">
             <div class="range-control">
               <div class="scale-start"></div>
-              <div class="range-toggle-min" aria-label="Минимальная цена"></div>
+              <div class="range-toggle-min" aria-label="Минимальная цена" tabindex="0"></div>
               <div class="range-price"></div>
-              <div class="range-toggle-max" aria-label="Максимальная цена"></div>
+              <div class="range-toggle-max" aria-label="Максимальная цена" tabindex="0"></div>
               <div class="scale-end"></div>
             </div>
           </div>
@@ -156,19 +156,19 @@
           <div class="filter-background">
             <ul>
               <li class="filter-option">
-                <input class="visibility-hidden radio-fat" type="radio" id="fat-0" name="filters-fat" value="0">
+                <input class="hide-filter-input radio-fat" type="radio" id="fat-0" name="filters-fat" value="0">
                 <label for="fat-0">0%</label>
               </li>
               <li class="filter-option">
-                <input class="visibility-hidden radio-fat" type="radio" id="fat-10" name="filters-fat" value="10" checked="">
+                <input class="hide-filter-input radio-fat" type="radio" id="fat-10" name="filters-fat" value="10" checked="">
                 <label for="fat-10"> до 10%</label>
               </li>
               <li class="filter-option">
-                <input class="visibility-hidden radio-fat" type="radio" id="fat-30" name="filters-fat" value="30">
+                <input class="hide-filter-input radio-fat" type="radio" id="fat-30" name="filters-fat" value="30">
                 <label for="fat-30">до 30%</label>
               </li>
               <li class="filter-option">
-                <input class="visibility-hidden radio-fat" type="radio" id="fat-30-more" name="filters-fat" value="30-more">
+                <input class="hide-filter-input radio-fat" type="radio" id="fat-30-more" name="filters-fat" value="30-more">
                 <label for="fat-30-more">выше 30%</label>
               </li>
             </ul>
@@ -181,23 +181,23 @@
           <div class="filter-background">
             <ul>
               <li class="filter-option checklist">
-                <input class=" checkbox-filter" type="checkbox" id="filler-chocolate" name="filters-fillers" value="chocolate" checked="">
+                <input class="checkbox-filter hide-filter-input" type="checkbox" id="filler-chocolate" name="filters-fillers" value="chocolate" checked="">
                 <label for="filler-chocolate">шоколадные</label>
               </li>
               <li class="filter-option checklist">
-                <input class="checkbox-filter" type="checkbox" id="filler-sugar" name="filters-fillers" value="shugar" checked="">
+                <input class="checkbox-filter hide-filter-input" type="checkbox" id="filler-sugar" name="filters-fillers" value="shugar" checked="">
                 <label for="filler-sugar">сахарные присыпки</label>
               </li>
               <li class="filter-option checklist">
-                <input class="checkbox-filter" type="checkbox" id="filler-fruit" name="filters-fillers" value="fruit">
+                <input class="checkbox-filter hide-filter-input" type="checkbox" id="filler-fruit" name="filters-fillers" value="fruit">
                 <label for="filler-fruit">фрукты</label>
               </li>
               <li class="filter-option checklist">
-                <input class="checkbox-filter" type="checkbox" id="filler-syrup" name="filters-fillers" value="syrup">
+                <input class="checkbox-filter hide-filter-input" type="checkbox" id="filler-syrup" name="filters-fillers" value="syrup">
                 <label for="filler-syrup">сиропы</label>
               </li>
               <li class="filter-option checklist">
-                <input class="checkbox-filter" type="checkbox" id="filler-jam" name="filters-fillers" value="jam" checked="" disabled>
+                <input class="checkbox-filter hide-filter-input" type="checkbox" id="filler-jam" name="filters-fillers" value="jam" checked="" disabled>
                 <label for="filler-jam">джемы</label>
               </li>
             </ul>

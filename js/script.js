@@ -8,6 +8,7 @@ var btnFeedbackClose = document.querySelector(".feedback-close");
 btnFeedbackClick.addEventListener("click", function () {
   popup.classList.add("modal-show");
   popupFulscreen.classList.add("modal-show")
+  document.getElementById("feedback-name-field").focus();
 });
 
 popupFulscreenClick.addEventListener("click", function () {
