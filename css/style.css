@@ -774,7 +774,7 @@ ul.main-navigation-catalog {
   display: block;
 
   margin: 0px 0px 0px 0px;
-  padding: 8px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 
   border-radius: 4px;
   background-color: #f8f7f4;
@@ -787,7 +787,7 @@ ul.main-navigation-catalog {
 }
 
 .main-navigation-catalog li:first-of-type {
-  padding-top: 0px;
+  padding-top: 8px;
   padding-bottom: 11px;
 
   border-bottom: 1px solid gray;
@@ -1602,8 +1602,14 @@ div.address {
   opacity: 0.8;
 }
 
-.slider-controls label:hover, .slider-controls label:focus {
+.slider-controls label:hover {
   opacity: 1;
+}
+
+.slider-radio:focus ~ .slider-controls label {
+  opacity: 1;
+  outline: 1px dotted rgba(255,255,255,0.8);
+  outline-offset: 1px;
 }
 
 .slider-controls {
@@ -1620,30 +1626,30 @@ div.address {
   width: 100%;
   height: 100%;
 
-  background-color: #eee;
+  /*background-color: #eee;*/
 }
 
-#product-1:checked ~ .site-wrapper {
+#product-1:checked ~ .site-wrapper-background {
   transition: background-image 1.3s ease, background-color 1.3s ease;
 
   background-color: #849d8f;
 }
 
-#product-2:checked ~ .site-wrapper {
+#product-2:checked ~ .site-wrapper-background {
   transition: background-image 1.3s ease, background-color 1.3s ease;
 
   background-color: #8996a6;
 }
 
-#product-3:checked ~ .site-wrapper {
+#product-3:checked ~ .site-wrapper-background {
   transition: background-image 1.3s ease, background-color 1.3s ease;
 
   background-color: #9d8b84;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+#product-1:checked ~ .slider-controls label[for="product-1"],
+#product-2:checked ~ .slider-controls label[for="product-2"],
+#product-3:checked ~ .slider-controls label[for="product-3"] {
   background-color: #ffffff;
 }
 
@@ -1652,9 +1658,9 @@ div.address {
 }
 
 
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+#product-1:checked ~ #slide1,
+#product-2:checked ~ #slide2,
+#product-3:checked ~ #slide3 {
   display: block;
 
   /*background-color: #cccccc;*/
@@ -1758,6 +1764,8 @@ li.hit::before {
 
   border: none;
 }
+
+
 
 .filters legend {
   margin-bottom: 7px;
@@ -2007,12 +2015,12 @@ legend.price-controls {
 .filter-down-row {
   display: flex;
 
-  width: 860px;
+  min-width: 860px;
 
 
 
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .filters-submit {
@@ -2505,4 +2513,19 @@ div.btn-shopping-basket {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+
+.site-wrapper-background {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+
+  /*display: none;*/
+
+  width: 100vw;
+  height: 100vh;
+
+  /*background-color: rgba(150, 130, 120, 0.7);*/
 }
