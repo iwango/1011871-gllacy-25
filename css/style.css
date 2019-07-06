@@ -9,7 +9,9 @@ html {
 body {
   min-width: 1200px;
   margin: 0 auto;
+
   background-color: #849d8f;
+
   font-family: "Roboto", "Arial", sans-serif;
 }
 
@@ -20,7 +22,9 @@ img {
 .visibility-hidden {
   position: absolute;
   top: 550px;
+
   clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -37,7 +41,9 @@ img {
 
 span.kg::before {
   margin-left: 3px;
+
   content: "₽";
+
   font-size: 45px;
   font-weight: bold;
 }
@@ -64,6 +70,7 @@ span.kg::before {
 
 .main-navigation a {
   color: #ffffff;
+
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
@@ -71,7 +78,9 @@ span.kg::before {
 
 .main-navigation-catalog a {
   text-decoration: none;
+
   color: #323232;
+
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
@@ -100,6 +109,7 @@ span.kg::before {
 
 .menu-activ a {
   cursor: pointer;
+
   color: #ffffff;
 }
 
@@ -108,12 +118,14 @@ span.kg::before {
   padding-right: 14px;
   padding-bottom: 7px;
   padding-left: 14px;
+
   border-radius: 16px;
 }
 
 .upper-level:hover > a, .nav-up-anchor:focus {
   cursor: pointer;
   text-decoration: none;
+
   color: #323232;
   background-color: rgb(247, 246, 243);
 }
@@ -121,6 +133,7 @@ span.kg::before {
 .upper-level > a:active {
   cursor: pointer;
   text-decoration: none;
+
   color: #323232;
   background-color: rgb(247, 246, 243);
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
@@ -129,6 +142,7 @@ span.kg::before {
 
 .btn-user-navigation, .btn-shopping-basket {
   color: #ffffff;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -136,6 +150,7 @@ span.kg::before {
 
 .btn-shopping-basket .filled {
   position: relative;
+
   color: #323232;
 }
 
@@ -145,6 +160,7 @@ span.kg::before {
 
 .contacts {
   color: #ffffff;
+
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
@@ -162,6 +178,7 @@ section.features {
   margin-top: -63px;
   padding-right: 0px;
   padding-left: 0px;
+
   border-radius: 16px;
   background-color: #fae4b4;
   background-image: url("../img/background-features.jpg");
@@ -169,6 +186,7 @@ section.features {
 
 .features h2 {
   color: #323232;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -177,7 +195,9 @@ section.features {
 .features li {
   letter-spacing: 0.1px;
   word-spacing: 0px;
+
   color: #323232;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;
@@ -187,6 +207,7 @@ article.news-blog {
   width: 560px;
   min-height: 220px;
   margin-bottom: 20px;
+
   border-radius: 16px;
   background-color: #f8d2c4;
   background-image: url("../img/background-strawberry.jpg");
@@ -198,7 +219,9 @@ article.news-blog {
   margin-bottom: 5px;
   margin-left: 20px;
   padding-right: 230px;
+
   color: #323232;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -206,9 +229,12 @@ article.news-blog {
 
 .news-blog a {
   display: block;
+
   max-width: 310px;
   padding-left: 20px;
+
   color: #323232;
+
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
@@ -216,9 +242,11 @@ article.news-blog {
 
 section.subscription {
   position: relative;
+
   width: 560px;
   min-height: 220px;
   margin-bottom: 20px;
+
   border-radius: 16px;
   background-color: #fdf4e3;
   background-image: url("../img/mail-background.png");
@@ -231,9 +259,11 @@ div.mail-content {
   right: 0;
   bottom: 0;
   left: 0;
+
   width: 549px;
   min-height: 211px;
   margin: 5px auto;
+
   border-radius: 16px;
   background-color: #f8f7f4;
 }
@@ -242,13 +272,16 @@ div.mail-content {
   margin-top: 30px;
   margin-left: 21px;
   padding-right: 10px;
+
   letter-spacing: 0.05px;
 }
 
 .subscription p {
   margin-top: 0px;
   padding-top: 30px;
+
   color: #5a5a5a;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;
@@ -256,6 +289,7 @@ div.mail-content {
 
 .subscription input {
   color: #999999;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -264,6 +298,7 @@ div.mail-content {
 .subscription button {
   color: #fefefe;
   border: none;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -271,6 +306,7 @@ div.mail-content {
 
 .footer-info a {
   color: #ffffff;
+
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
@@ -279,6 +315,7 @@ div.mail-content {
 
 .footer-copyrigh, .footer-copyrigh a {
   color: #fefefe;
+
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
@@ -296,6 +333,7 @@ div.mail-content {
 
 .header-catalog {
   color: #ffffff;
+
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -303,6 +341,7 @@ div.mail-content {
 
 .price {
   color: #ffffff;
+
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
@@ -315,6 +354,7 @@ div.mail-content {
 
 a.product {
   color: #ffffff;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -323,12 +363,14 @@ a.product {
 .assortment img {
   width: 267px;
   height: 267px;
+
   border-radius: 50%;
 }
 
 button.btn-search {
   width: 33px;
   height: 33px;
+
   border: none;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -340,6 +382,7 @@ button.btn-search {
 
 .btn-search:hover button {
   cursor: pointer;
+
   border: none;
   background-color: #f8f7f4;
   background-image: url("../img/search-icon-hover.png");
@@ -356,7 +399,9 @@ button.btn-user-navigation {
   width: 93px;
   height: 32px;
   padding-right: 16px;
+
   text-align: right;
+
   border: none;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -368,6 +413,7 @@ button.btn-user-navigation {
 
 .btn-user-navigation:hover .btn-user-navigation {
   cursor: pointer;
+
   color: #323232;
   border: none;
   background-color: #f8f7f4;
@@ -378,7 +424,9 @@ button.btn-shopping-basket {
   width: 100px;
   height: 33px;
   padding-right: 17px;
+
   text-align: right;
+
   border: none;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -392,7 +440,9 @@ button.btn-shopping-basket.filled {
   width: 117px;
   height: 32px;
   padding-right: 17px;
+
   text-align: right;
+
   border: none;
   border-radius: 16px;
   background-color: rgba(248, 247, 244, 0.99);
@@ -409,13 +459,16 @@ button.btn-shopping-basket.filled {
 
 .breadcrumbs li {
   display: inline;
+
   margin-left: 0px;
 }
 
 .breadcrumbs li:not(:last-of-type)::after {
   padding-right: 2px;
   padding-left: 6px;
+
   content: "»";
+
   color: #ffffff;
 }
 
@@ -429,8 +482,11 @@ button.btn-shopping-basket.filled {
 .main-header {
   position: relative;
   z-index: 35;
+
   display: flex;
+
   margin-bottom: 5px;
+
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -443,8 +499,11 @@ button.btn-shopping-basket.filled {
 
 .main-navigation ul {
   position: relative;
+
   display: flex;
+
   padding: 0;
+
   flex-wrap: wrap;
 }
 
@@ -463,6 +522,7 @@ button.btn-shopping-basket.filled {
 
 .sliders-offers {
   position: relative;
+
   min-height: 807px;
   margin-bottom: 69px;
 }
@@ -472,9 +532,12 @@ button.btn-shopping-basket.filled {
   z-index: 0;
   top: -82px;
   left: 0px;
+
   width: 100%;
   height: 100%;
+
   content: "";
+
   background: radial-gradient(circle closest-corner at 50% 31%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.0) 75%);
 }
 
@@ -491,6 +554,7 @@ button.btn-shopping-basket.filled {
 
 ul.features {
   display: flex;
+
   flex-wrap: wrap;
 }
 
@@ -500,6 +564,7 @@ ul.features {
 
 .features li {
   position: relative;
+
   max-width: 483px;
   margin-right: auto;
   margin-bottom: 24px;
@@ -536,7 +601,9 @@ li.delivery::before {
 
 .news-subscription {
   display: flex;
+
   margin-bottom: 40px;
+
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
@@ -544,6 +611,7 @@ li.delivery::before {
 
 .map-space {
   position: relative;
+
   width: 100%;
   height: 430px;
   margin-top: -20px;
@@ -552,6 +620,7 @@ li.delivery::before {
 .adress-wrap {
   position: relative;
   top: 0px;
+
   width: 1200px;
   height: 0px;
   margin: 0px auto;
@@ -559,15 +628,20 @@ li.delivery::before {
 
 .main-footer {
   display: flex;
+
   margin-top: 15px;
+
   justify-content: space-between;
 }
 
 ul.footer-info {
   position: relative;
+
   display: flex;
+
   max-width: 315px;
   padding-left: 0px;
+
   flex-wrap: wrap;
 }
 
@@ -575,6 +649,7 @@ ul.footer-info {
   width: 151px;
   padding-bottom: 3px;
   padding-left: 9px;
+
   letter-spacing: 0.1px;
 }
 
@@ -582,14 +657,17 @@ ul.footer-info {
   position: absolute;
   top: 3px;
   left: -13px;
+
   content: url("../img/heart-icon.svg");
 }
 
 ul.social-buttons {
   display: flex;
+
   width: 186px;
   padding-top: 3px;
   padding-left: 0px;
+
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -598,10 +676,13 @@ ul.social-buttons {
 .breadcrumbs-contacts {
   position: relative;
   z-index: 1;
+
   display: flex;
+
   width: auto;
   margin-bottom: 0px;
   padding-bottom: 0px;
+
   justify-content: flex-start;
 }
 
@@ -614,6 +695,7 @@ ul.social-buttons {
   margin-right: 0px;
   margin-left: auto;
   padding-bottom: 0px;
+
   text-align: right;
 }
 
@@ -630,27 +712,33 @@ ul.social-buttons {
 
 .assortment ul {
   display: flex;
+
   margin: 0px;
   padding: 0px;
+
   flex-wrap: wrap;
 }
 
 li.product {
   position: relative;
+
   width: 292px;
   margin-top: -48px;
+
   border-radius: 5px;
 }
 
 .filters {
   min-height: 135px;
   margin-bottom: 83px;
+
   color: #ffffff;
 }
 
 h1.header-catalog {
   margin: 3px 0px 0px 0px;
   padding: 0px;
+
   letter-spacing: -0.1px;
 }
 
@@ -659,9 +747,12 @@ ul.main-navigation-catalog {
   position: absolute;
   top: -444px;
   left: -7px;
+
   display: block;
+
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+
   border-radius: 4px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -674,6 +765,7 @@ ul.main-navigation-catalog {
 .main-navigation-catalog li:first-of-type {
   padding-top: 8px;
   padding-bottom: 11px;
+
   border-bottom: 1px solid gray;
 }
 
@@ -683,6 +775,7 @@ ul.main-navigation-catalog {
 
 .upper-level:hover ul.main-navigation-catalog, .nav-up-anchor:focus + .main-navigation-catalog {
   top: 44px;
+
   display: block;
 }
 
@@ -700,10 +793,14 @@ div.btn-search, div.btn-user-navigation {
   position: absolute;
   top: -540px;
   right: 0px;
+
   display: block;
+
   min-width: 341px;
   min-height: 84px;
+
   text-align: center;
+
   border-radius: 6px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -711,14 +808,17 @@ div.btn-search, div.btn-user-navigation {
 
 .btn-search input {
   display: inline-block;
+
   min-width: 310px;
   height: 42px;
   margin-top: 21px;
   padding-left: 13px;
+
   color: #999999;
   border: 1px solid transparent;
   border-radius: 3px;
   box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
+
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
@@ -728,10 +828,14 @@ div.btn-search, div.btn-user-navigation {
   position: absolute;
   top: -540px;
   right: 0px;
+
   display: block;
+
   min-width: 277px;
   min-height: 214px;
+
   text-align: center;
+
   border-radius: 6px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -747,6 +851,7 @@ div.btn-search, div.btn-user-navigation {
 .btn-user-navigation input {
   display: inline-block;
   float: left;
+
   min-width: 240px;
   margin-top: 21px;
   margin-bottom: 1px;
@@ -765,12 +870,15 @@ div.btn-search, div.btn-user-navigation {
 
 .btn-user-navigation #submit-logon {
   float: left;
+
   margin: 20px 20px 0px 20px;
   padding: 10px 25px;
+
   color: #fefefe;
   border: none;
   border-radius: 25px/30px;
   background-color: #ec593c;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -778,13 +886,17 @@ div.btn-search, div.btn-user-navigation {
 
 .rem {
   float: left;
+
   margin-top: 22px;
+
   text-align: left;
 }
 
 .rem a {
   display: block;
+
   padding: 0px 0px 5px 0px;
+
   font-size: 13px;
   font-weight: normal;
   line-height: 16px;
@@ -796,16 +908,21 @@ div.btn-search, div.btn-user-navigation {
   z-index: 235;
   top: 50%;
   left: 50%;
+
   display: none;
+
   min-width: 477px;
   max-width: 477px;
   min-height: 442px;
   margin-top: -239px;
   margin-left: -237px;
+
   animation: show-block 0.5s 1;
   text-align: left;
+
   border-radius: 8px;
   background-color: #f8f7f4;
+
   animation-fill-mode: forwards;
 }
 
@@ -813,6 +930,7 @@ div.btn-search, div.btn-user-navigation {
 @keyframes show-block {
   0% {
     animation-timing-function: ease-in;
+
     opacity: 0;
   }
   100% {
@@ -824,6 +942,7 @@ div.btn-search, div.btn-user-navigation {
   margin-top: 15px;
   margin-bottom: 20px;
   margin-left: 23px;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -831,6 +950,7 @@ div.btn-search, div.btn-user-navigation {
 
 .feedback input {
   display: inline-block;
+
   min-width: 267px;
   height: 44px;
   margin-bottom: 20px;
@@ -841,6 +961,7 @@ div.btn-search, div.btn-user-navigation {
   border: 1px solid transparent;
   border-radius: 3px;
   box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
+
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -852,6 +973,7 @@ div.btn-search, div.btn-user-navigation {
   margin-bottom: 94px;
   margin-left: 24px;
   padding: 10px 13px 16px 13px;
+
   border: 1px solid transparent;
   border-radius: 3px;
   box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
@@ -859,13 +981,17 @@ div.btn-search, div.btn-user-navigation {
 
 .feedback button {
   position: relative;
+
   float: right;
+
   margin: 25px 23px 25px 20px;
   padding: 10px 25px;
+
   color: #fefefe;
   border: none;
   border-radius: 25px/30px;
   background-color: #ec593c;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -879,16 +1005,19 @@ div.btn-search, div.btn-user-navigation {
 
 .mail-content input {
   display: inline-block;
+
   min-width: 368px;
   height: 44px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 21px;
   padding-left: 13px;
+
   color: #999999;
   border: 1px solid transparent;
   border-radius: 3px;
   box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
+
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -897,10 +1026,12 @@ div.btn-search, div.btn-user-navigation {
 .mail-content button {
   margin: 20px 0px 0px 7px;
   padding: 10px 20px;
+
   color: #fefefe;
   border: none;
   border-radius: 25px/30px;
   background-color: #ec593c;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -925,20 +1056,25 @@ div.btn-search, div.btn-user-navigation {
 
 .btn-twitter a {
   display: block;
+
   width: 32px;
   height: 32px;
+
   background-image: url("../img/twitter-icon.svg");
 }
 
 .btn-instagram a {
   display: block;
+
   width: 32px;
   height: 32px;
+
   background-image: url("../img/instagram.svg");
 }
 
 .btn-facebook a {
   display: block;
+
   width: 32px;
   height: 32px;
 
@@ -947,8 +1083,10 @@ div.btn-search, div.btn-user-navigation {
 
 .btn-vk a {
   display: block;
+
   width: 32px;
   height: 32px;
+
   background-image: url("../img/vk-icon.svg");
 }
 
@@ -963,6 +1101,7 @@ div.btn-search, div.btn-user-navigation {
 .price-description {
   position: relative;
   z-index: 215;
+
   margin-top: -106px;
   margin-left: -2px;
   padding-bottom: 75px;
@@ -977,7 +1116,9 @@ p.price {
 
 .price-description a {
   display: block;
+
   padding: 0px 17px;
+
   text-align: center;
 }
 
@@ -985,6 +1126,7 @@ div.product {
   min-height: 405px;
   margin-top: 5px;
   padding-left: 5px;
+
   text-align: center;
 }
 
@@ -1000,10 +1142,12 @@ div.assortment {
 
 .paginator {
   display: inline-block;
+
   width: 100%;
   min-height: 54px;
   margin-bottom: -2px;
   padding-bottom: 13px;
+
   border-bottom: 1px solid #ffffff;
 }
 
@@ -1012,6 +1156,7 @@ div.assortment {
   padding-right: 14px;
   padding-bottom: 7px;
   padding-left: 14px;
+
   border-radius: 16px;
   background-color: #d07058;
 }
@@ -1020,10 +1165,13 @@ div.assortment {
   position: absolute;
   top: 59px;
   right: 27px;
+
   display: none;
+
   width: 540px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+
   border-radius: 4px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -1031,6 +1179,7 @@ div.assortment {
 
 .checkout-section a {
   text-decoration: none;
+
   color: #323232;
 }
 
@@ -1045,11 +1194,14 @@ div.assortment {
 
 a.checkout-btn {
   float: right;
+
   margin: -2px 15px 21px 20px;
   padding: 10px 15px;
+
   color: #fefefe;
   border: none;
   border-radius: 25px/30px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -1058,6 +1210,7 @@ a.checkout-btn {
 
 button.cancel-btn {
   padding-left: 0px;
+
   border: none;
   background-color: transparent;
 }
@@ -1065,9 +1218,11 @@ button.cancel-btn {
 .checkout-section table {
   margin-top: 17px;
   margin-left: 15px;
+
   border-collapse: collapse;
 
   color: #323232;
+
   font-size: 13px;
   font-weight: normal;
   line-height: 16px;
@@ -1079,6 +1234,7 @@ button.cancel-btn {
 
 .last-row td {
   padding-bottom: 18px;
+
   border-bottom: 1px solid black;
 }
 
@@ -1101,6 +1257,7 @@ td.weight {
 
 td.basket-price {
   width: 70px;
+
   color: #999999;
 }
 
@@ -1111,8 +1268,11 @@ td.basket-price-summ {
 
 p.total-price {
   padding-right: 13px;
+
   text-align: right;
+
   color: #323232;
+
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -1141,21 +1301,27 @@ p.total-price {
 .pagination {
   display: flex;
   float: right;
+
   margin-top: 0px;
+
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
 .pagination a {
   display: block;
+
   width: 27px;
   height: 26px;
   margin-left: 2px;
   padding-top: 4px;
+
   text-align: center;
   text-decoration: none;
+
   color: #fff;
   border-radius: 50%;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -1177,6 +1343,7 @@ p.total-price {
 
 a.next-page {
   width: 22px;
+
   background-image: url("../img/arrow-page-next.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -1192,11 +1359,14 @@ div.address {
   position: absolute;
   right: 27px;
   bottom: 67px;
+
   width: 302px;
   min-height: 305px;
   padding-top: 15px;
   padding-left: 25px;
+
   text-align: left;
+
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.98);
 }
@@ -1204,6 +1374,7 @@ div.address {
 .address p {
   margin-bottom: 1px;
   padding-right: 100px;
+
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -1213,7 +1384,9 @@ div.address {
 .address address {
   margin-bottom: 18px;
   padding-right: 25px;
+
   color: #323232;
+
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -1221,10 +1394,14 @@ div.address {
 }
 .address a {
   display: block;
+
   margin-top: 5px;
+
   text-decoration: none;
   letter-spacing: 0.5px;
+
   color: #323232;
+
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
@@ -1238,9 +1415,11 @@ div.address {
 .address button {
   margin-bottom: 31px;
   padding: 10px 29px;
+
   color: #fefefe;
   border: none;
   border-radius: 25px/30px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -1248,6 +1427,7 @@ div.address {
 
 .slider-imgs {
   position: relative;
+
   width: 100%;
 }
 
@@ -1256,8 +1436,10 @@ div.address {
   z-index: 1;
   top: -34px;
   left: 150px;
+
   width: 50%;
   height: 584px;
+
   background: url("../img/slider-1-1.png") center no-repeat;
 }
 
@@ -1266,8 +1448,10 @@ div.address {
   z-index: 0;
   top: 9px;
   right: 129px;
+
   width: 50%;
   height: 519px;
+
   background: url("../img/slider-1-2.png") center no-repeat;
 }
 
@@ -1276,8 +1460,10 @@ div.address {
   z-index: 1;
   top: -34px;
   left: 150px;
+
   width: 50%;
   height: 584px;
+
   background: url("../img/slider-2-1.png") center no-repeat;
 }
 
@@ -1286,8 +1472,10 @@ div.address {
   z-index: 0;
   top: 9px;
   right: 129px;
+
   width: 50%;
   height: 519px;
+
   background: url("../img/slider-2-2.png") center no-repeat;
 }
 
@@ -1296,8 +1484,10 @@ div.address {
   z-index: 1;
   top: -34px;
   left: 150px;
+
   width: 50%;
   height: 584px;
+
   background: url("../img/slider-3-1.png") center no-repeat;
 }
 
@@ -1306,8 +1496,10 @@ div.address {
   z-index: 0;
   top: 9px;
   right: 129px;
+
   width: 50%;
   height: 519px;
+
   background: url("../img/slider-3-2.png") center no-repeat;
 }
 
@@ -1315,16 +1507,20 @@ div.address {
   position: relative;
   z-index: 5;
   left: 50%;
+
   width: 700px;
   margin-left: -350px;
   padding-top: 274px;
+
   text-align: center;
 }
 
 .slide-title {
   margin: 0 auto;
   margin-bottom: 30px;
+
   color: #ffffff;
+
   font-size: 60px;
   font-weight: 800;
   line-height: 60px;
@@ -1332,11 +1528,14 @@ div.address {
 
 .button {
   display: inline-block;
+
   padding: 12px 44px;
+
   cursor: pointer;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
+
   color: #ffffff;
   border: none;
   border-radius: 50px;
@@ -1344,6 +1543,7 @@ div.address {
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
   font-size: 31px;
   font-weight: 600;
   line-height: 41px;
@@ -1361,11 +1561,14 @@ div.address {
 
 .slider-controls label {
   display: inline-block;
+
   width: 21px;
   height: 21px;
   margin-right: 8px;
+
   cursor: pointer;
   vertical-align: top;
+
   opacity: 0.8;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -1385,8 +1588,10 @@ div.address {
 .slider-controls {
   position: relative;
   z-index: 20;
+
   margin-top: -43px;
   margin-bottom: 23px;
+
   font-size: 0;
 }
 
@@ -1397,16 +1602,19 @@ div.address {
 
 #product-1:checked ~ .site-wrapper-background {
   transition: background-image 1.3s ease, background-color 1.3s ease;
+
   background-color: #849d8f;
 }
 
 #product-2:checked ~ .site-wrapper-background {
   transition: background-image 1.3s ease, background-color 1.3s ease;
+
   background-color: #8996a6;
 }
 
 #product-3:checked ~ .site-wrapper-background {
   transition: background-image 1.3s ease, background-color 1.3s ease;
+
   background-color: #9d8b84;
 }
 
@@ -1430,18 +1638,24 @@ div.address {
 .promo-block {
   position: relative;
   z-index: 3;
+
   display: flex;
+
   min-height: 229px;
   padding-top: 41px;
+
   color: #ffffff;
+
   justify-content: space-between;
 }
 
 .promo-1 {
   float: left;
+
   width: 560px;
   min-height: 229px;
   margin-left: 0px;
+
   border-radius: 16px;
   background: url("../img/promo-1-fon.jpg") center no-repeat;
   background-color: #770511;
@@ -1450,9 +1664,11 @@ div.address {
 
 .promo-2 {
   float: right;
+
   width: 560px;
   min-height: 229px;
   margin-right: 0px;
+
   border-radius: 16px;
   background: url("../img/promo-2-fon.jpg") center no-repeat;
   background-color: #512517;
@@ -1461,6 +1677,7 @@ div.address {
 
 .promo-block h3 {
   margin: 15px 0px 16px 18px;
+
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -1470,6 +1687,7 @@ div.address {
   margin: 0px;
   padding-right: 25px;
   padding-left: 18px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 22px;
@@ -1477,10 +1695,12 @@ div.address {
 
 .promo-block .button {
   float: right;
+
   margin-top: 43px;
   margin-right: 23px;
   margin-bottom: 23px;
   padding: 11px 22px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -1491,11 +1711,13 @@ li.hit::before {
   z-index: 217;
   top: 6px;
   left: 14px;
+
   content: url("../img/index-catlog-hit.png");
 }
 
 .filter-up-row {
   display: flex;
+
   margin-bottom: 16px;
   padding-top: 25px;
 }
@@ -1503,6 +1725,7 @@ li.hit::before {
 .filters fieldset {
   margin: 0 15px 0 0;
   padding: 0;
+
   border: none;
 }
 
@@ -1511,7 +1734,9 @@ li.hit::before {
 .filters legend {
   margin-bottom: 7px;
   margin-left: 15px;
+
   color: #fff;
+
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
@@ -1519,6 +1744,7 @@ li.hit::before {
 
 .filter-background {
   padding: 7px 12px;
+
   border-radius: 25px;
   background-color: rgba(255, 255, 255, .3);
 }
@@ -1530,9 +1756,11 @@ li.hit::before {
 .filter-sorting {
   min-width: 170px;
   padding: 0px 17px 0px 0px;
+
   color: inherit;
   border: none;
   background-color: transparent;
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1540,6 +1768,7 @@ li.hit::before {
 
 .filter-sorting:hover {
   cursor: pointer;
+
   color: #323232;
 }
 
@@ -1559,9 +1788,12 @@ li.hit::before {
   position: absolute;
   top: 12px;
   right: 14px;
+
   width: 11px;
   height: 10px;
+
   pointer-events: none;
+
   background-image: url("../img/filter-icon-white.png");
 }
 
@@ -1576,9 +1808,11 @@ li.hit::before {
 
 .price-controls input {
   width: 26px;
+
   color: inherit;
   border: none;
   background-color: transparent;
+
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
@@ -1594,39 +1828,50 @@ legend.price-controls {
 
 .range-control {
   display: flex;
+
   width: auto;
   height: 22px;
   padding: 1px 10px;
+
   align-items: center;
   justify-content: space-between;
 }
 
 .scale-start {
   display: inline-block;
+
   width: 13px;
   height: 5px;
+
   background: rgba(255, 255, 255, .3);
 }
 
 .scale-end {
   display: inline-block;
+
   width: 45px;
   height: 5px;
+
   background: rgba(255, 255, 255, .3);
 }
 
 .range-price {
   display: inline-block;
+
   width: auto;
   height: 5px;
+
   background: rgba(255, 255, 255, 1);
+
   flex-grow: 1;
 }
 
 .range-toggle-min {
   width: 20px;
   height: 20px;
+
   cursor: pointer;
+
   border-radius: 50%;
   background-color: #ababab;
   box-shadow: inset 0px 0px 0px 8px #ffffff;
@@ -1640,7 +1885,9 @@ legend.price-controls {
 .range-toggle-max {
   width: 20px;
   height: 20px;
+
   cursor: pointer;
+
   border-radius: 50%;
   background-color: #ababab;
   box-shadow: inset 0px 0px 0px 8px #ffffff;
@@ -1653,21 +1900,26 @@ legend.price-controls {
 
 .fat-content ul {
   display: flex;
+
   min-width: 389px;
   min-height: 20px;
   margin: 0px 0px;
   padding-top: 2px;
   padding-left: 37px;
+
   list-style-type: none;
+
   flex-wrap: wrap;
   align-items: center;
 }
 
 .fat-content li {
   position: relative;
+
   margin-right: 54px;
   margin-left: -5px;
   padding: 7px 0px;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
@@ -1679,9 +1931,12 @@ legend.price-controls {
   position: absolute;
   top: 4px;
   left: -31px;
+
   width: 22px;
   height: 22px;
+
   content: "";
+
   opacity: 0.8;
   border: 3px solid #ffffff;
   border-radius: 50%;
@@ -1695,9 +1950,12 @@ legend.price-controls {
   position: absolute;
   top: 11px;
   left: -24px;
+
   width: 8px;
   height: 8px;
+
   content: "";
+
   opacity: 0.8;
   border-radius: 50%;
   background-color: #ffffff;
@@ -1705,17 +1963,22 @@ legend.price-controls {
 
 .filter-down-row {
   display: flex;
+
   min-width: 860px;
+
   align-items: center;
 }
 
 .filters-submit {
   padding: 6px 28px;
+
   cursor: pointer;
+
   color: #fff;
   border: 2px solid #fff;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, .2);
+
   align-self: flex-end;
 }
 
@@ -1733,12 +1996,15 @@ legend.price-controls {
 
 .fillers ul {
   display: flex;
+
   min-width: 389px;
   min-height: 20px;
   margin: 0px 0px;
   padding-top: 2px;
   padding-left: 37px;
+
   list-style-type: none;
+
   flex-wrap: wrap;
   align-items: center;
 }
@@ -1748,6 +2014,7 @@ legend.price-controls {
 
 .fillers li {
   position: relative;
+
   padding-top: 7px;
   padding-right: 55px;
   padding-bottom: 7px;
@@ -1764,6 +2031,7 @@ legend.price-controls {
 
 .checkbox-filter + label {
   opacity: 0.8;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
@@ -1774,9 +2042,12 @@ legend.price-controls {
   z-index: 5;
   top: 4px;
   left: -35px;
+
   width: 24px;
   height: 24px;
+
   content: "";
+
   opacity: 0.8;
   background-image: url(../img/filter-checkbox-off.svg);
   background-repeat: no-repeat;
@@ -1825,26 +2096,31 @@ legend.price-controls {
   color: #323232;
   outline: 0;
   outline-offset: 0;
+
   font-weight: bold;
 }
 
 .btn-search input::-webkit-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .btn-search input:-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .btn-search input::-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .btn-search input::placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
@@ -1864,26 +2140,31 @@ legend.price-controls {
   color: #323232;
   outline: 0;
   outline-offset: 0;
+
   font-weight: bold;
 }
 
 .btn-user-navigation input::-webkit-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .btn-user-navigation input:-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .btn-user-navigation input::-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .btn-user-navigation input::placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
@@ -1903,26 +2184,31 @@ legend.price-controls {
   color: #323232;
   outline: 0;
   outline-offset: 0;
+
   font-weight: bold;
 }
 
 .mail-content input::-webkit-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .mail-content input:-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .mail-content input::-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .mail-content input::placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
@@ -1942,26 +2228,31 @@ legend.price-controls {
   color: #323232;
   outline: 0;
   outline-offset: 0;
+
   font-weight: bold;
 }
 
 .feedback input::-webkit-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .feedback input:-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .feedback input::-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .feedback input::placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
@@ -1981,26 +2272,31 @@ legend.price-controls {
   color: #323232;
   outline: 0;
   outline-offset: 0;
+
   font-weight: bold;
 }
 
 .feedback textarea::-webkit-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .feedback textarea:-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .feedback textarea::-ms-input-placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
 .feedback textarea::placeholder {
   color: #999999;
+
   font-weight: normal;
 }
 
@@ -2009,9 +2305,12 @@ legend.price-controls {
   z-index: 234;
   top: 0px;
   left: 0px;
+
   display: none;
+
   width: 100vw;
   height: 100vh;
+
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2024,9 +2323,12 @@ button.feedback-close {
   position: absolute;
   top: 9px;
   right: 11px;
+
   margin: 0px;
   padding: 5px;
+
   cursor: pointer;
+
   background-color: transparent;
 }
 
@@ -2035,6 +2337,7 @@ button.feedback-close {
   z-index: 1;
   top: -34px;
   left: 250px;
+
   display: inline-block;
 }
 
@@ -2043,6 +2346,7 @@ button.feedback-close {
   z-index: 1;
   top: -34px;
   left: 250px;
+
   display: inline-block;
 }
 
@@ -2051,16 +2355,19 @@ button.feedback-close {
   z-index: 1;
   top: -34px;
   left: 250px;
+
   display: inline-block;
 }
 
 li.product:hover {
   z-index: 5;
+
   background-color: rgba(248, 247, 244, 0.2);
 }
 
 li.product:focus-within {
   z-index: 5;
+
   background-color: rgba(248, 247, 244, 0.2);
 }
 
@@ -2069,8 +2376,11 @@ li.product:focus-within {
   z-index: 5;
   bottom: 27px;
   left: 45px;
+
   display: none;
+
   padding: 10px 20px;
+
   font-size: 18px;
   font-weight: normal;
   line-height: 24px;
@@ -2094,6 +2404,7 @@ li.product:hover img {
 .no-close-window {
   position: absolute;
   top: 0px;
+
   width: 150px;
   height: 50px;
 }
@@ -2121,7 +2432,6 @@ div.btn-shopping-basket {
   width: 100%;
 }
 
-
 .checkbox-filter:focus + label::before, .checkbox-filter:focus + label {
   opacity: 1;
 }
@@ -2132,18 +2442,20 @@ div.btn-shopping-basket {
 
 .hide-filter-input {
   position: absolute;
+
   clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
 }
-
 
 .site-wrapper-background {
   position: fixed;
   z-index: -1;
   top: 0px;
   left: 0px;
+
   width: 100vw;
   height: 100vh;
 }
