@@ -394,6 +394,7 @@ button.btn-search {
 .btn-search:hover form, .btn-search:focus + form {
   top: 54px;
 }
+
 .btn-search:focus-within form{
   top: 54px;
 }
@@ -479,7 +480,6 @@ button.btn-shopping-basket.filled {
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
-
 }
 
 .main-header {
@@ -492,14 +492,8 @@ button.btn-shopping-basket.filled {
 
   margin-bottom: 5px;
 
-
-
   -webkit-box-pack: start;
-
-
   -ms-flex-pack: start;
-
-
   justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -521,11 +515,7 @@ button.btn-shopping-basket.filled {
 
   padding: 0;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
 }
 
@@ -581,11 +571,7 @@ ul.features {
   display: -ms-flexbox;
   display: flex;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
 }
 
@@ -637,11 +623,7 @@ li.delivery::before {
 
   margin-bottom: 40px;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
   -ms-flex-line-pack: center;
   align-content: center;
@@ -674,14 +656,8 @@ li.delivery::before {
 
   margin-top: 15px;
 
-
-
   -webkit-box-pack: justify;
-
-
   -ms-flex-pack: justify;
-
-
   justify-content: space-between;
 }
 
@@ -695,11 +671,7 @@ ul.footer-info {
   max-width: 315px;
   padding-left: 0;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
 }
 
@@ -728,14 +700,8 @@ ul.social-buttons {
   padding-top: 3px;
   padding-left: 0;
 
-
-
   -webkit-box-pack: justify;
-
-
   -ms-flex-pack: justify;
-
-
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -754,14 +720,8 @@ ul.social-buttons {
   margin-bottom: 0;
   padding-bottom: 0;
 
-
-
   -webkit-box-pack: start;
-
-
   -ms-flex-pack: start;
-
-
   justify-content: flex-start;
 }
 
@@ -797,11 +757,7 @@ ul.social-buttons {
   margin: 0;
   padding: 0;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
 }
 
@@ -1018,11 +974,7 @@ div.btn-search, div.btn-user-navigation {
   border-radius: 8px;
   background-color: #f8f7f4;
 
-
-
   -webkit-animation-fill-mode: forwards;
-
-
   animation-fill-mode: forwards;
 }
 
@@ -1226,7 +1178,6 @@ div.btn-search, div.btn-user-navigation {
   margin-top: -106px;
   margin-left: -2px;
   padding-bottom: 75px;
-
 }
 
 p.price {
@@ -1313,7 +1264,6 @@ div.assortment {
 
 .main-navigation-catalog li {
   padding: 8px 22px 5px 20px;
-
 }
 
 a.checkout-btn {
@@ -1448,11 +1398,7 @@ p.total-price {
 
   margin-top: 0;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
   -ms-flex-line-pack: start;
   align-content: flex-start;
@@ -1529,7 +1475,10 @@ div.address {
   font-weight: normal;
   line-height: 20px;
 }
-.address p:first-child { padding-right: 125px;}
+
+.address p:first-child {
+  padding-right: 125px;
+}
 
 .address address {
   margin-bottom: 18px;
@@ -1542,6 +1491,7 @@ div.address {
   font-style: normal;
   line-height: 24px;
 }
+
 .address a:first-of-type {
   display: block;
 
@@ -1819,14 +1769,8 @@ div.address {
 
   color: #ffffff;
 
-
-
   -webkit-box-pack: justify;
-
-
   -ms-flex-pack: justify;
-
-
   justify-content: space-between;
 }
 
@@ -1944,8 +1888,6 @@ li.hit::before {
   border: none;
   background-color: transparent;
 
-
-
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1986,7 +1928,6 @@ li.hit::before {
   background-image: url("../img/filter-icon-black.png");
 }
 
-
 .price-controls label::after {
   content: " руб.";
 }
@@ -2020,14 +1961,8 @@ legend.price-controls {
   height: 22px;
   padding: 1px 10px;
 
-
-
   -webkit-box-align: center;
-
-
   -ms-flex-align: center;
-
-
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -2066,14 +2001,8 @@ legend.price-controls {
 
   background: rgba(255, 255, 255, 1);
 
-
-
   -webkit-box-flex: 1;
-
-
   -ms-flex-positive: 1;
-
-
   flex-grow: 1;
 }
 
@@ -2124,11 +2053,7 @@ legend.price-controls {
 
   list-style-type: none;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2146,9 +2071,11 @@ legend.price-controls {
   font-weight: normal;
   line-height: 18px;
 }
+
 .fat-content li:last-of-type {
   margin-right: 4px;
 }
+
 .fat-content label::before {
   position: absolute;
   top: 4px;
@@ -2190,14 +2117,8 @@ legend.price-controls {
 
   min-width: 860px;
 
-
-
   -webkit-box-align: center;
-
-
   -ms-flex-align: center;
-
-
   align-items: center;
 }
 
@@ -2211,11 +2132,7 @@ legend.price-controls {
   border-radius: 25px;
   background-color: rgba(255, 255, 255, .2);
 
-
-
   -ms-flex-item-align: end;
-
-
   align-self: flex-end;
 }
 
@@ -2245,11 +2162,7 @@ legend.price-controls {
 
   list-style-type: none;
 
-
-
   -ms-flex-wrap: wrap;
-
-
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2570,7 +2483,6 @@ legend.price-controls {
 
 .modal-show {
   display: block;
-
 }
 
 button.feedback-close {
